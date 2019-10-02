@@ -4,4 +4,4 @@ Albert Quon(300111590), Alois Clerc, Félix Larouche, Lisa Koroloyov, Zachary Le
 
 Product: Codevert
 
-Product Description: A tool/application that translates code of one programming language to another programming language. 
+Product Description: A tool/application that translates code of one programming language to another programming language of the same type. 
