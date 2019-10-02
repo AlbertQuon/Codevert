@@ -1,4 +1,4 @@
-# seg-Codevert
+# Codevert
 
 Albert Quon(300111590), Alois Clerc, Félix Larouche, Lisa Koroloyov, Zachary Legros
 
