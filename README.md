@@ -1,6 +1,6 @@
 # Codevert
 
-Group: Albert Quon (300111590), Alois Clerc, Félix Larouche, Lisa Koroloyov, Zachary Legros
+Group: Albert Quon (300111590), Alois Clerc, Félix Larouche, Lisa Koroloyov (0300137056), Zachary Legros
 
 Product: Codevert
 
