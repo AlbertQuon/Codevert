@@ -1,7 +1,7 @@
 The Look and Feel of Intercode
 ==============================
 
-The overall look and feel should be minimalist and flat. We will avoid 3d buttons and 3d metal looks.
+The overall look and feel should be 
 The website should be 
 
 Colours
