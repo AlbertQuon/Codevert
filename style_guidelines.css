@@ -1,8 +1,7 @@
-* {
+body {
     font-family: 'Roboto', sans-serif;
-}
-
-h1 {
-    font-family: 'Roboto Black', sans-serif;
-    font-size: 4.25rem;
+    margin: 0;
+    padding: 0;
+    background-color: #F4F5FF;
+    overflow-x: hidden;
 }
