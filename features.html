@@ -7,12 +7,32 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Codevert Features</title>
 </head>
+<link rel="stylesheet" href="style_guidelines.css"> 
 <style>
-    .featurehead {
-        padding-left: 100px
+    .featurehead{
+        width: 33%;
+        padding-left: 40%;
+        padding-right: 100px;
+
     }
+    .product-feature{
+        background-color: antiquewhite;
+    }
+    td{
+      width: 100%;  
+    }
+    #faqheading{
+        text-align: center;
+    }
+    div#producttitle{
+        text-align: center;
+    }
+    table{
+        border: 1px solid black;
+    }
+    
 </style>
-<link rel="stylesheet" href="style_guidelines.css">
+
 
 <body>
     <nav>
@@ -29,31 +49,57 @@
         </ul>
         </div>
     </nav>
-    <div id="product title">
-        <h1>Codevert</h1>
+    <div id="producttitle">
         <p>Translate Code in real time....(description)</p>
         <img>
     </div>
-    <div class="product feature">
-        <table>
+    <div class="product-feature">
+        <table id="features">
             <tr>
-        <td><h3 class="featurehead">Feature</h3></td>
-        <td><h3 class="featurehead">Feature</h3></td>
-        <td><h3 class="featurehead">Feature</h3></td>
-        <img>
-        
+                <th>
+                    <h3 class='featurehead'>Feature</h3>
+                </th>
+                <td>
+                    <p>description</p>
+                </td>
+                <td><img src = ""></td>
+                
+            </tr>
+            <tr>
+                <th>
+                    <h3 class='featurehead'>Feature</h3>
+                </th>
+                <td>
+                    <p>description</p>
+                </td>
+                <td><img src = ""></td>
+            </tr>
+            <tr>
+                <th>
+                    <h3 class='featurehead'>Feature</h3>
+                </th>
+                <td>
+                    <p>description</p>
+                </td>
+                <td><img src = ""></td>
+            </tr>
         </table>
     </div>
-    <div id="extra features">
+    <div id="extrafeatures">
         <h2>Additional Features</h2>
-        <table>
+        <table id = "extraFeat">
             <tr>
-                <th></th>
+                <th>Feature</th>
+                <td>description</td>
+            </tr>
+            <tr>
+                <th>Feature</th>
+                <td>description</td>
             </tr>
         </table>
     </div>
     <div id="faq">
-        <h2>FAQ</h2>
+        <h2 id = "faqheading">FAQ</h2>
         <ul>
             <li><a href="#">Question</a></li>
             <li><a href="#">Question</a></li>
