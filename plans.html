@@ -1,50 +1,93 @@
 <!DOCTYPE html>
   <html>
     <head>
+        <link rel="stylesheet" type="text/css" href="zach_temporary.css">
+        <link href="https://fonts.googleapis.com/css?family=Montserrat&display=swap" rel="stylesheet"> 
+        <script src="https://kit.fontawesome.com/be738c2079.js" crossorigin="anonymous"></script>
     </head>
     <body>
-      <nav></nav>
+      <nav>
+        <div id="logo">
+            <span>INTERCODE</span>
+        </div>
+        <ul id="nav-links">
+            <li><a href="#">Home</a></li>
+            <li><a href="#">About</a></li>
+            <li><a href="#">Products</a></li>
+            <li><a href="#">Plans</a></li>
+            <li><a href="#">Contact</a></li>
+            <li><a><i class="fas fa-user" id="user"></i></a></li>
+        </ul>
+        </div>
+    </nav>
       <div class="plans-wrapper">
         <div id="plans-head">
           <h1>Codevert plans</h1>
         </div>
         <div class="plans-containers">
           <div class="package-containers">
-            <div class="package1">
-              <h3 class="package-head">Name of package</h3>
-              <ul>
-                <li><span>feature</span></li>
-                <li><span>feature</span></li>
-                <li><span>feature</span></li>
-                <li><span>feature</span></li>
-                <li><span>feature</span></li>
-              </ul>
-              <h4 class="package-cost">Cost</h4>
-              <a href="#" class="buttons" id="package-buttons">Select plan</a>
-            </div>
-            <div class="package2">
-              <h3 class="package-head">Name of package</h3>
-              <ul>
-                <li><span>feature</span></li>
-                <li><span>feature</span></li>
-                <li><span>feature</span></li>
-                <li><span>feature</span></li>
-                <li><span>feature</span></li>
-              </ul>
-              <h4 class="package-cost">Cost</h4>
-              <a href="#" class="buttons" id="package-buttons">Select plan</a>
-            </div>
-            <div class="package3">
-              <h3 class="package-head">Name of package</h3>
-              <ul>
-                <li><span>feature</span></li>
-                <li><span>feature</span></li>
-                <li><span>feature</span></li>
-                <li><span>feature</span></li>
-                <li><span>feature</span></li>
-              </ul>
-              <h4 class="package-cost">Cost</h4>
-              <a href="#" class="buttons" id="package-buttons">Select plan</a>
+              <div class="package">
+                  <div class="package-top">
+                    <h3 class="package-head">Free trial</h3>
+                  </div>
+                  <div class="mid-wrapper">
+                    <div class="package-mid">
+                      <ul class="features-list">
+                        <li><i class="fas fa-check" id="checked"></i><span>feature 1</span></li>
+                        <li><i class="fas fa-check" id="unchecked"></i><span>feature 2</span></li>
+                        <li><i class="fas fa-check" id="unchecked"></i><span>feature 3</span></li>
+                        <li><i class="fas fa-check" id="unchecked"></i><span>feature 4</span></li>
+                        <li><i class="fas fa-check" id="unchecked"></i><span>feature 5</span></li>
+                        <li><i class="fas fa-check" id="unchecked"></i><span>feature 6</span></li>
+                        </ul>
+                    </div>
+                  </div>
+                  <div class="package-bottom">
+                    <h4 class="package-cost">Free for 30 days</h4>
+                    <a href="#" class="buttons" id="package-buttons">Start free trial</a>
+                  </div>                 
+                </div>
+            <div class="package">
+                <div class="package-top">
+                  <h3 class="package-head">Regular</h3>
+                </div>
+                <div class="mid-wrapper">
+                  <div class="package-mid">
+                    <ul class="features-list">
+                      <li><i class="fas fa-check" id="checked"></i><span>feature 1</span></li>
+                      <li><i class="fas fa-check" id="checked"></i><span>feature 2</span></li>
+                      <li><i class="fas fa-check" id="checked"></i><span>feature 3</span></li>
+                      <li><i class="fas fa-check" id="unchecked"></i><span>feature 4</span></li>
+                      <li><i class="fas fa-check" id="unchecked"></i><span>feature 5</span></li>
+                      <li><i class="fas fa-check" id="unchecked"></i><span>feature 6</span></li>
+                    </ul>
+                  </div>
+                </div>
+                <div class="package-bottom">
+                  <h4 class="package-cost">$9.99 /month</h4>
+                  <a href="#" class="buttons" id="package-buttons">Subscribe now</a>
+                </div>                
+              </div>
+            <div class="package">
+              <div class="package-top">
+                <h3 class="package-head">Premium</h3>
+              </div>
+              <div class="mid-wrapper">
+                <div class="package-mid">
+                  <ul class="features-list">
+                    <li><i class="fas fa-check" id="checked"></i><span>feature 1</span></li>
+                    <li><i class="fas fa-check" id="checked"></i><span>feature 2</span></li>
+                    <li><i class="fas fa-check" id="checked"></i><span>feature 3</span></li>
+                    <li><i class="fas fa-check" id="checked"></i><span>feature 4</span></li>
+                    <li><i class="fas fa-check" id="checked"></i><span>feature 5</span></li>
+                    <li><i class="fas fa-check" id="checked"></i><span>feature 6</span></li>
+                  </ul>
+                </div>
+              </div>
+              <div class="package-bottom">
+                <h4 class="package-cost">$14.99 /month</h4>
+                <a href="#" class="buttons" id="package-buttons">Subscribe now</a>
+              </div>              
             </div>
           </div>
         </div>
