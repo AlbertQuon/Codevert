@@ -12,7 +12,7 @@ nav {
     position: fixed;
     width: 100%;
     height: 80px;
-    background-color: #5680E9;
+    background-color:#F4F5FF;
     top: 0;
 }
 
@@ -20,10 +20,10 @@ nav {
     float: left;
     line-height: 80px;
     padding-left: 20px;
-    font-family: 'Montserrat';
+    font-family: 'Montserrat', sans-serif;
     font-weight: 900;
     font-size: 1.8rem;
-    color: #F4F5FF;
+    color: #5680E9;
 }
 
 #nav-links {
@@ -44,13 +44,13 @@ nav {
 }
 
 #nav-links li a:hover {
-    background-color: #F4F5FF;
-    color: #5680E9;
+    opacity: 0.7;
 }
 
 #nav-links li a{
     text-decoration: none;
-    color: #F4F5FF;
+    text-transform: uppercase;
+    color: rgb(43, 43, 43);
     padding: 30px 15px 30px 15px;
     transition: all .25s ease-in-out;
 }
@@ -64,7 +64,7 @@ nav {
 }
 
 .buttons {
-    background-color: #8860D0;
+    background-color: #5680E9;
     padding: 15px 20px 15px 20px;
     color: #F4F5FF;
     text-decoration: none;
@@ -75,27 +75,6 @@ nav {
     opacity: 0.8;
 }
 
-h1 {
-    font-size: 4.5rem;
-    font-weight: 600;
-    color: #5680E9;
-}
-
-p {
-    color: #5680E9;
-
-}
-
-.link {
-    text-decoration: none;
-    color: #5680E9;
-    font-weight: 600;
-}
-
-.link:hover {   
-    text-decoration: underline;
-}
-
 #plans-head {
     display: flex;
     justify-content: center;
@@ -104,7 +83,7 @@ p {
 
 #plans-head h1 {
     margin: 100px 0 35px 0;
-    font-weight: 900;
+    font-weight: 600;
 }
 
 .package-containers {
@@ -116,8 +95,8 @@ p {
 }
 
 .package {
-    height: 465px;
-    width: 320px;
+    height: 450px;
+    width: calc(250px + 1vw);
     display: flex;
     flex-direction: column;
     justify-content: space-around;
@@ -166,17 +145,17 @@ p {
 }
 
 .package-head {
-    color: #5680E9;
-    font-weight: 600;
+    color: rgb(43, 43, 43);
+    font-weight: 500;
     text-align: center;
-    font-size: 2.25rem;
+    font-size: 2rem;
     margin: 0;
     padding: 15px;
 }
 
 .package-cost {
-    color: #5680E9;
-    font-weight: 500;
+    color: rgb(43, 43, 43);
+    font-weight: 400;
     font-size: 1.5rem;
     text-decoration:  none;
 }
@@ -215,8 +194,8 @@ p {
     background-color: rgb(56, 219, 56);
     position: absolute;
     margin-top: -124px;
-    margin-left: 15vw;
-    height: 50px;
+    margin-left: 12vw;
+    height: 55px;
     width: 100px;
     display: flex;
     justify-content: center;
@@ -228,7 +207,7 @@ p {
     border-radius: 5px 5px 0 0;
     box-shadow: 0px 1px 3px rgb(182, 182, 182);
     z-index: -1;
-    transform: translate(0px, 55px);
+    transform: translate(0px, 57px);
     transition: all 0.25s ease-in-out;
 }
 
