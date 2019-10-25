@@ -1,5 +1,28 @@
 window.addEventListener("resize", plansLayout)
 
+const mobileMenu = document.getElementById("toggle")
+mobileMenu.addEventListener("mouseover", changeColor)
+mobileMenu.addEventListener("mouseout", changeColorOff)
+
+function changeColor() {
+    let line1 = document.getElementById("line1")
+    let line2 = document.getElementById("line2")
+    let line3 = document.getElementById("line3")
+    line1.style.background = "var(--mid_blue)"
+    line2.style.background = "var(--mid_blue)"
+    line3.style.background = "var(--mid_blue)"
+}
+
+function changeColorOff() {
+    let line1 = document.getElementById("line1")
+    let line2 = document.getElementById("line2")
+    let line3 = document.getElementById("line3")
+    line1.style.background = "var(--off_black)"
+    line2.style.background = "var(--off_black)"
+    line3.style.background = "var(--off_black)"
+}
+
+
 function plansLayout() {
     const mq = window.matchMedia( "(max-width: 950px)" )
     let root = document.documentElement
@@ -27,3 +50,4 @@ function plansLayout() {
         cd.style.borderRadius = "0 7px 7px 0"
     }
 }
+

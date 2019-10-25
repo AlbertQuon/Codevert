@@ -17,6 +17,7 @@ body {
     --purple: #8860D0;
     --mid_blue: #5ab9ea;
     --light_blue: #84ceeb;
+    --off_black: rgb(43, 43, 43);
 }
 
 nav {
@@ -28,6 +29,7 @@ nav {
     border-top: 2.5px solid var(--mid_blue);
     display: flex;
     justify-content: space-between;
+    align-items: center;
 }
 
 #logo {
@@ -178,3 +180,21 @@ nav {
     padding: 0 25px 0 0;
     font-size: 1.25rem;
 }
+
+.toggle {
+    display: flex;
+    flex-direction: column;
+    padding-right: 25px;
+    cursor: pointer;
+}
+
+.toggle span {
+    position: relative;
+    height: 4px;
+    width: 28px;
+    background: var(--off_black);
+    margin-bottom: 5px;
+    border-radius: 2px;
+    transition: all 0.25s ease-in-out;
+}
+
