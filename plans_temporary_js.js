@@ -1,8 +1,30 @@
+function load() {
+    plansLayout();
+    responsiveNav();
+}
+
 window.addEventListener("resize", plansLayout)
+window.addEventListener("resize", responsiveNav)
 
 const mobileMenu = document.getElementById("toggle")
 mobileMenu.addEventListener("mouseover", changeColor)
 mobileMenu.addEventListener("mouseout", changeColorOff)
+
+function responsiveNav() {
+    const mq = window.matchMedia( "(max-width: 800px)" )
+    let mobileMenu = document.getElementById("toggle")
+    let navLinks = document.getElementById("nav-links")
+
+    if (mq.matches) {
+        navLinks.style.display = "none"
+        mobileMenu.style.display = "flex"
+    } else {
+        navLinks.style.display = "flex"
+        mobileMenu.style.display = "none"
+        
+    }
+
+}
 
 function changeColor() {
     let line1 = document.getElementById("line1")
