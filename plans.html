@@ -5,7 +5,7 @@
         <link href="https://fonts.googleapis.com/css?family=Montserrat&display=swap" rel="stylesheet">
         <script src="https://kit.fontawesome.com/be738c2079.js" crossorigin="anonymous"></script>
     </head>
-    <body onload="matchHeight()">
+    <body onload="plansLayout()">
       <nav>
         <div id="logo"><img src="sprite.png" style="height: 65px; width: 65px;" alt="Logo"></div>
         <ul id="nav-links">
@@ -19,7 +19,7 @@
         </div>
     </nav>
       <div class="plans-wrapper">
-        <div class="plans">
+        <div class="plans" id="plans">
           <div class="codevert-premium" id="codevert-premium">
             <h1 id="premium-header">Codevert Premium</h1>
             <p id="why-premium">By owning a Codevert Premium license, not only you have lifetime access to Codevert, but you can also use the features listed below which are not available in the demo version.</p>
@@ -37,7 +37,7 @@
               <h3 id="premium-cost">$14.99 /months</h3>
             </div>
           </div>
-          <div class="plans-trial">
+          <div class="plans-trial" id="plans-trial">
             <div class="trial-infos">
               <h1 id="demo-header">Codevert Demo</h1>
               <p id="why-demo">Codevert Demo has limited features, but just enough for you to have a good impression of this ingenious tool.</p>

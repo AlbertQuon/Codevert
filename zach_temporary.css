@@ -9,7 +9,8 @@ body {
 }
 
 :root {
-    --height: 0px;
+    --height: 250px;
+    --width: min-content;
     --blue: #5680e9;
     --white: #f4f5ff;
     --off-white: #edeefa;
@@ -43,7 +44,7 @@ nav {
     list-style: none;
     margin: 0;
     line-height: 80px;
-    padding-right: 20px;
+    padding-right: 25px;
 }
 
 #nav-links li {
@@ -62,7 +63,7 @@ nav {
     text-decoration: none;
     text-transform: uppercase;
     color: rgb(43, 43, 43);
-    padding: 10px;
+    padding: 15px;
     transition: all .25s ease-in-out;
 }
 
@@ -74,7 +75,9 @@ nav {
     background-color: #F4F5FF;
     border-radius: 7px;
     height: min-content;
+    flex-direction: row;
 }
+
 
 #premium-header {
     font-weight: 600;
@@ -127,7 +130,7 @@ nav {
 .plans-trial {
     height: var(--height);
     flex-grow: 2;
-    width: min-content;
+    width: var(--width);
     display: flex;
     flex-direction: column;
     justify-content: space-between;
@@ -140,13 +143,16 @@ nav {
 .codevert-premium {
     padding: 35px;
     flex-grow: 5;
-    width: min-content;
+    width: auto;
+    display: flex;
+    flex-direction: column;
 }
 
 #demo-btn {
     margin-bottom: 35px;
-    background-color: #F4F5FF;
-    color: var(--mid_blue);
+    background-color: transparent;
+    color: var(--white);
+    box-shadow:inset 0px 0px 0px 3px var(--white);
 }
 
 #demo-header {
@@ -160,14 +166,15 @@ nav {
     display: flex;
     flex-direction: row;
     align-items: center;
+    justify-content: flex-start;
     height: min-content;
-    width: max-content;
+    width: 100%;
 }
 
 #premium-cost {
     margin: 0;
     color: var(--mid_blue);
     font-weight: 500;
-    padding: 0 25px 0 25px;
+    padding: 0 25px 0 0;
     font-size: 1.25rem;
 }
