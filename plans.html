@@ -5,11 +5,9 @@
         <link href="https://fonts.googleapis.com/css?family=Montserrat&display=swap" rel="stylesheet">
         <script src="https://kit.fontawesome.com/be738c2079.js" crossorigin="anonymous"></script>
     </head>
-    <body onload="flexContent()">
+    <body onload="matchHeight()">
       <nav>
-        <div id="logo">
-            <span>INTERCODE</span>
-        </div>
+        <div id="logo"><img src="sprite.png" style="height: 65px; width: 65px;" alt="Logo"></div>
         <ul id="nav-links">
             <li><a href="#">Home</a></li>
             <li><a href="#">About</a></li>
@@ -21,81 +19,32 @@
         </div>
     </nav>
       <div class="plans-wrapper">
-        <div id="plans-head">
-          <h1>Codevert plans</h1>
-        </div>
-        <div>
-          <div class="package-containers" id="package-containers">
-              <div class="package">
-                  <div class="package-top">
-                    <h3 class="package-head">Free trial</h3>
-                  </div>
-                  <div class="mid-wrapper">
-                    <div class="package-mid">
-                      <ul class="features-list">
-                        <li><i class="fas fa-check" id="checked"></i><span>feature 1</span></li>
-                        <li><i class="fas fa-check" id="unchecked"></i><span>feature 2</span></li>
-                        <li><i class="fas fa-check" id="unchecked"></i><span>feature 3</span></li>
-                        <li><i class="fas fa-check" id="unchecked"></i><span>feature 4</span></li>
-                        <li><i class="fas fa-check" id="unchecked"></i><span>feature 5</span></li>
-                        <li><i class="fas fa-check" id="unchecked"></i><span>feature 6</span></li>
-                        </ul>
-                    </div>
-                  </div>
-                  <div class="package-bottom">
-                    <h4 class="package-cost">Free for 30 days</h4>
-                    <a href="#" class="buttons" id="package-buttons">Start free trial</a>
-                  </div>                 
-                </div>
-            <div class="package">
-                <div class="package-top">
-                  <h3 class="package-head">Regular</h3>
-                </div>
-                <div class="mid-wrapper">
-                  <div class="package-mid">
-                    <ul class="features-list">
-                      <li><i class="fas fa-check" id="checked"></i><span>feature 1</span></li>
-                      <li><i class="fas fa-check" id="checked"></i><span>feature 2</span></li>
-                      <li><i class="fas fa-check" id="checked"></i><span>feature 3</span></li>
-                      <li><i class="fas fa-check" id="unchecked"></i><span>feature 4</span></li>
-                      <li><i class="fas fa-check" id="unchecked"></i><span>feature 5</span></li>
-                      <li><i class="fas fa-check" id="unchecked"></i><span>feature 6</span></li>
-                    </ul>
-                  </div>
-                </div>
-                <div class="package-bottom">
-                  <h4 class="package-cost">$9.99 /month</h4>
-                  <a href="#" class="buttons" id="package-buttons">Subscribe now</a>
-                </div>                
+        <div class="plans">
+          <div class="codevert-premium" id="codevert-premium">
+            <h1 id="premium-header">Codevert Premium</h1>
+            <p id="why-premium">By owning a Codevert Premium license, not only you have lifetime access to Codevert, but you can also use the features listed below which are not available in the demo version.</p>
+            <ul id="premium-features">
+              <li><i class="fas fa-check"></i><span>Lifetime access to Codevert</span></li>
+              <li><i class="fas fa-check"></i><span>feature 2</span></li>
+              <li><i class="fas fa-check"></i><span>feature 3</span></li>
+              <li><i class="fas fa-check"></i><span>feature 4</span></li>
+              <li><i class="fas fa-check"></i><span>feature 5</span></li>
+            </ul>
+            <div id="premium-bottom">
+              <div id="subscribe">
+                  <a href="" class="button">Subscribe now</a>
               </div>
-                <div class="package" id="premium-package">
-                    <div class="package-top">
-                        <div id="premium-wrapper">
-                            <div class="best-value">
-                              <h4 id="bv-text">Best value <i class="fas fa-dollar-sign"></i></h4>
-                            </div>
-                        </div>
-                      <h3 class="package-head">Premium</h3>
-                    </div>
-                    <div class="mid-wrapper">
-                      <div class="package-mid">
-                        <ul class="features-list">
-                          <li><i class="fas fa-check" id="checked"></i><span>feature 1</span></li>
-                          <li><i class="fas fa-check" id="checked"></i><span>feature 2</span></li>
-                          <li><i class="fas fa-check" id="checked"></i><span>feature 3</span></li>
-                          <li><i class="fas fa-check" id="checked"></i><span>feature 4</span></li>
-                          <li><i class="fas fa-check" id="checked"></i><span>feature 5</span></li>
-                          <li><i class="fas fa-check" id="checked"></i><span>feature 6</span></li>
-                        </ul>
-                      </div>
-                    </div>
-                    <div class="package-bottom">
-                      <h4 class="package-cost">$14.99 /month</h4>
-                      <a href="#" class="buttons" id="package-buttons">Subscribe now</a>
-                    </div>              
-                </div>
-              </div>
-            
+              <h3 id="premium-cost">$14.99 /months</h3>
+            </div>
+          </div>
+          <div class="plans-trial">
+            <div class="trial-infos">
+              <h1 id="demo-header">Codevert Demo</h1>
+              <p id="why-demo">Codevert Demo has limited features, but just enough for you to have a good impression of this ingenious tool.</p>
+            </div>
+            <div id="try-btn">
+              <a href="" class="button" id="demo-btn">Try it for free</a>
+            </div>
           </div>
         </div>
       </div>
