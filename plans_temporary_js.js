@@ -48,7 +48,7 @@ function plansLayout() {
     var plans = document.getElementById("plans")
     var cp = document.getElementById("codevert-premium")
     var cd = document.getElementById("plans-trial")
-    var getHeightPlans = plans.offsetHeight
+    var getHeightCP = cp.offsetHeight
 
     if (mq.matches) {
         plans.style.flexDirection = "column"
@@ -63,7 +63,7 @@ function plansLayout() {
 
     } else {
         plans.style.flexDirection = "row"
-        root.style.setProperty('--height', getHeightPlans + 'px')
+        root.style.setProperty('--height', getHeightCP + 'px')
         root.style.setProperty("--width", "auto")
         cd.style.borderRadius = "0 7px 7px 0"
     }

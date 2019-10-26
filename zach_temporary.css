@@ -9,7 +9,7 @@ body {
 }
 
 :root {
-    --height: 480px;
+    --height: min-content;
     --width: auto;
     --blue: #5680e9;
     --white: #f4f5ff;
@@ -91,7 +91,7 @@ nav {
     align-items: center;
     background-color: #F4F5FF;
     border-radius: 7px;
-    height: var(--height);
+    height: min-content;
     flex-direction: row;
 }
 
