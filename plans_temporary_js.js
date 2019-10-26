@@ -77,9 +77,11 @@ function toggle() {
     var mobileMenu = document.getElementById("mobile-menu")
     var pos = mobileMenu.getBoundingClientRect()
     let user = document.getElementById("user2")
+    let root = document.documentElement
     let line1 = document.getElementById("line1")
     let line2 = document.getElementById("line2")
     let line3 = document.getElementById("line3")
+
 
     if (pos.top == "-530") {
         mobileMenu.style.top = "80px"
@@ -89,13 +91,20 @@ function toggle() {
         user.style.transform = "scale(1)"
         user.style.marginRight = "0"
         //hamburger menu animation
-        line1
+        line2.classList.add("line2-scaled")
+        line1.classList.add("line1-rotated")
+        line3.classList.add("line3-rotated")
     } else {
         mobileMenu.style.top = "-530px"
         mobileMenu.style.opacity = "0"
+        //user icon animation
         user.style.marginRight = "-42px"
         user.style.transform = "scale(0)"
         user.style.opacity = "0"
+        //hamburger menu animation
+        line1.classList.remove("line1-rotated")
+        line3.classList.remove("line3-rotated")
+        line2.classList.remove("line2-scaled")
     }
 }
 
