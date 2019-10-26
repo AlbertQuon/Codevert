@@ -30,6 +30,14 @@ nav {
     display: flex;
     justify-content: space-between;
     align-items: center;
+    z-index: 10;
+}
+
+#nav-bg {
+    display: flex;
+    width: 100%;
+    height: 81px;
+    background-color: var(--white);
 }
 
 #logo {
@@ -218,17 +226,18 @@ nav {
 
 #mobile-menu {
     display: flex;
-    position: absolute;
+    position: fixed;
     width: 100%;
-    top: 80px;
+    top: -530px;
     justify-content: center;
     flex-direction: column;
     align-items: center;
     margin: 0;
-    transition: all 0.25s ease 0s;
+    transition: all 0.5s ease 0s;
     padding: 0;
     background-color: var(--white);
     border-bottom: 2.5px solid var(--mid_blue);
+    z-index: 0;
 }
 
 #mobile-menu ul {

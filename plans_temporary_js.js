@@ -46,7 +46,6 @@ function changeColorOff() {
     line3.style.background = "var(--off_black)"
 }
 
-
 function plansLayout() {
     const mq = window.matchMedia( "(max-width: 950px)" )
     let root = document.documentElement
@@ -72,6 +71,17 @@ function plansLayout() {
         root.style.setProperty('--height', getHeightCP + 'px')
         root.style.setProperty("--width", "auto")
         cd.style.borderRadius = "0 7px 7px 0"
+    }
+}
+
+function toggle() {
+    var mobileMenu = document.getElementById("mobile-menu")
+    var pos = mobileMenu.getBoundingClientRect()
+
+    if (pos.top == "-530") {
+        mobileMenu.style.top = "80px"
+    } else {
+        mobileMenu.style.top = "-530px"
     }
 }
 
