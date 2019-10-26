@@ -9,8 +9,8 @@ body {
 }
 
 :root {
-    --height: min-content;
-    --width: min-content;
+    --height: 480px;
+    --width: auto;
     --blue: #5680e9;
     --white: #f4f5ff;
     --off-white: #edeefa;
