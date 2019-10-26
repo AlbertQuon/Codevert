@@ -43,6 +43,7 @@ nav {
 #nav-links {
     display: flex;
     justify-content: flex-end;
+    align-items: center;
     list-style: none;
     margin: 0;
     line-height: 80px;
@@ -55,6 +56,14 @@ nav {
 
 #user {
     font-size: 1.5rem;
+    padding: 15px;
+    transition: all .25s ease-in-out;
+    color: var(--off_black);
+    visibility: hidden;
+}
+
+#user:hover {
+    color: var(--mid_blue);
 }
 
 #nav-links li a:hover {
@@ -198,3 +207,67 @@ nav {
     transition: all 0.25s ease-in-out;
 }
 
+#hamburger-menu-wrapper {
+    display: flex;
+    align-items: center;
+}
+
+#line3 {
+    margin-bottom: 0;
+}
+
+#mobile-menu {
+    display: flex;
+    position: absolute;
+    width: 100%;
+    top: 80px;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    margin: 0;
+    transition: all 0.25s ease 0s;
+    padding: 0;
+    background-color: var(--white);
+    border-bottom: 2.5px solid var(--mid_blue);
+}
+
+#mobile-menu ul {
+    text-align: center;
+    list-style-type: none;
+    padding: 0;
+    width: 100%;
+}
+
+#mobile-menu li:not(#mobile-contact) {
+    padding: 20px;
+}
+
+#mobile-menu a:not(#mobile-contact) {
+    text-align: center;
+    text-decoration: none;
+    color: var(--off_black);
+    transition: all 0.25s ease 0s;
+    text-transform: uppercase;
+}
+
+#mobile-menu a:not(#mobile-contact):hover {
+    text-align: center;
+    text-decoration: none;
+    color: var(--mid_blue);
+    transition: all 0.25s ease 0s;
+}
+
+#mobile-contact {
+    padding: 15px;
+    background-color: var(--mid_blue);
+    text-decoration: none;
+    color: #F4F5FF;
+    transition: all 0.25s ease-in-out;
+    display: inline-block;
+    width: max-content;
+    text-transform: uppercase;
+}
+
+#mobile-contact:hover {
+    opacity: 0.8;
+}

@@ -14,14 +14,16 @@ function responsiveNav() {
     const mq = window.matchMedia( "(max-width: 800px)" )
     let mobileMenu = document.getElementById("toggle")
     let navLinks = document.getElementById("nav-links")
+    let user = document.getElementById("user")
 
     if (mq.matches) {
+        user.style.visibility = "hidden"
         navLinks.style.display = "none"
         mobileMenu.style.display = "flex"
     } else {
+        user.style.visibility = "visible"
         navLinks.style.display = "flex"
         mobileMenu.style.display = "none"
-        
     }
 
 }
