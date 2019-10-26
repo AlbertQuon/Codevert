@@ -49,6 +49,7 @@ function plansLayout() {
     var cp = document.getElementById("codevert-premium")
     var cd = document.getElementById("plans-trial")
     var getHeightCP = cp.offsetHeight
+    var whyP = document.getElementById("why-premium")
 
     if (mq.matches) {
         plans.style.flexDirection = "column"
@@ -60,6 +61,7 @@ function plansLayout() {
         cd.style.borderRadius = "0 0 7px 7px"
         root.style.setProperty("--height", "min-content")
         root.style.setProperty("--width", "100%")
+        whyP.style.margin = "0"
 
     } else {
         plans.style.flexDirection = "row"
@@ -82,7 +84,7 @@ function toggle() {
     } else {
         mobileMenu.style.top = "-530px"
         user.style.marginRight = "-42px"
-        user.style.transform = "scale(0.7)"
+        user.style.transform = "scale(0)"
         user.style.opacity = "0"
     }
 }
