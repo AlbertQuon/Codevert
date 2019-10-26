@@ -86,7 +86,7 @@ nav {
 }
 
 .plans {
-    margin: 125px calc(100px + 3vw) 0 calc(100px + 3vw);
+    margin: calc(81px + 3.5vh) calc(100px + 3vw) 0 calc(100px + 3vw);
     display: flex;
     align-items: center;
     background-color: #F4F5FF;
@@ -105,7 +105,7 @@ nav {
 #premium-features {
     list-style-type: none;
     margin: 0;
-    padding: 0 15px 15px 15px;
+    padding: 0 0 15px 15px;
 }
 
 .fa-check {
@@ -115,7 +115,7 @@ nav {
 }
 
 #premium-features li {
-    padding: 10px 10px 10px 0;
+    padding: 10px 0 10px 0;
 }
 
 #why-premium {
@@ -194,7 +194,7 @@ nav {
     color: var(--off_black);
     font-weight: 500;
     padding: 0 25px 0 0;
-    font-size: 1.25rem;
+    font-size: calc(0.8rem + 1vw);
     text-align: right;
 }
 

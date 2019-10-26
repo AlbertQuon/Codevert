@@ -50,6 +50,7 @@ function plansLayout() {
     var cd = document.getElementById("plans-trial")
     var getHeightCP = cp.offsetHeight
     var whyP = document.getElementById("why-premium")
+    var cost = document.getElementById("premium-cost")
 
     if (mq.matches) {
         plans.style.flexDirection = "column"
@@ -62,6 +63,7 @@ function plansLayout() {
         root.style.setProperty("--height", "min-content")
         root.style.setProperty("--width", "100%")
         whyP.style.margin = "0"
+        cost.style.padding = "0"
 
     } else {
         plans.style.flexDirection = "row"
@@ -75,14 +77,22 @@ function toggle() {
     var mobileMenu = document.getElementById("mobile-menu")
     var pos = mobileMenu.getBoundingClientRect()
     let user = document.getElementById("user2")
+    let line1 = document.getElementById("line1")
+    let line2 = document.getElementById("line2")
+    let line3 = document.getElementById("line3")
 
     if (pos.top == "-530") {
         mobileMenu.style.top = "80px"
+        mobileMenu.style.opacity = "1"
+        //user icon animation
         user.style.opacity = "1"
         user.style.transform = "scale(1)"
         user.style.marginRight = "0"
+        //hamburger menu animation
+        line1
     } else {
         mobileMenu.style.top = "-530px"
+        mobileMenu.style.opacity = "0"
         user.style.marginRight = "-42px"
         user.style.transform = "scale(0)"
         user.style.opacity = "0"
