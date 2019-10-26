@@ -9,7 +9,7 @@ body {
 }
 
 :root {
-    --height: 250px;
+    --height: min-content;
     --width: min-content;
     --blue: #5680e9;
     --white: #f4f5ff;
@@ -88,11 +88,10 @@ nav {
 .plans {
     margin: 125px 200px 0 200px;
     display: flex;
-    justify-content: space-between;
     align-items: center;
     background-color: #F4F5FF;
     border-radius: 7px;
-    height: min-content;
+    height: var(--height);
     flex-direction: row;
 }
 
@@ -161,6 +160,7 @@ nav {
 .codevert-premium {
     padding: 35px;
     flex-grow: 5;
+    height: min-content;
     width: auto;
     display: flex;
     flex-direction: column;
@@ -184,7 +184,7 @@ nav {
     display: flex;
     flex-direction: row;
     align-items: center;
-    justify-content: flex-start;
+    justify-content: space-between;
     height: min-content;
     width: 100%;
 }
@@ -294,6 +294,7 @@ nav {
     margin-right: -42px;
     transform: scale(0.7);
     z-index: 0;
+    cursor: pointer;
 }
 
 #user2:hover {
