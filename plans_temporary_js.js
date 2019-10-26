@@ -11,19 +11,20 @@ mobileMenu.addEventListener("mouseover", changeColor)
 mobileMenu.addEventListener("mouseout", changeColorOff)
 
 function responsiveNav() {
-    const mq = window.matchMedia( "(max-width: 800px)" )
-    let mobileMenu = document.getElementById("toggle")
+    const mq = window.matchMedia( "(max-width: 850px)" )
+    let hamburg = document.getElementById("toggle")
     let navLinks = document.getElementById("nav-links")
-    let user = document.getElementById("user")
+    let user = document.getElementById("user2")
 
     if (mq.matches) {
-        user.style.visibility = "hidden"
         navLinks.style.display = "none"
-        mobileMenu.style.display = "flex"
+        user.style.opacity = "0"
+        hamburg.style.display = "flex"
+        user.style.display = "block"
     } else {
-        user.style.visibility = "visible"
         navLinks.style.display = "flex"
-        mobileMenu.style.display = "none"
+        user.style.display = "none"
+        hamburg.style.display = "none"
     }
 
 }
@@ -66,6 +67,7 @@ function plansLayout() {
         cd.style.borderRadius = "0 0 7px 7px"
         root.style.setProperty("--height", "min-content")
         root.style.setProperty("--width", "100%")
+
     } else {
         plans.style.flexDirection = "row"
         root.style.setProperty('--height', getHeightCP + 'px')
@@ -77,11 +79,18 @@ function plansLayout() {
 function toggle() {
     var mobileMenu = document.getElementById("mobile-menu")
     var pos = mobileMenu.getBoundingClientRect()
+    let user = document.getElementById("user2")
 
     if (pos.top == "-530") {
         mobileMenu.style.top = "80px"
+        user.style.opacity = "1"
+        user.style.transform = "scale(1)"
+        user.style.marginRight = "0"
     } else {
         mobileMenu.style.top = "-530px"
+        user.style.marginRight = "-42px"
+        user.style.transform = "scale(0.7)"
+        user.style.opacity = "0"
     }
 }
 

@@ -67,7 +67,6 @@ nav {
     padding: 15px;
     transition: all .25s ease-in-out;
     color: var(--off_black);
-    visibility: hidden;
 }
 
 #user:hover {
@@ -213,11 +212,14 @@ nav {
     margin-bottom: 5px;
     border-radius: 2px;
     transition: all 0.25s ease-in-out;
+    z-index: 2;
 }
 
 #hamburger-menu-wrapper {
     display: flex;
     align-items: center;
+    justify-content: center;
+    width: min-content;
 }
 
 #line3 {
@@ -279,4 +281,29 @@ nav {
 
 #mobile-contact:hover {
     opacity: 0.8;
+}
+
+#user2 {
+    font-size: 1.5rem;
+    padding: 0 20px 0 0;
+    transition: all .5s ease;
+    color: var(--off_black);
+    opacity: 0;
+    position: relative;
+    display: block;
+    margin-right: -42px;
+    transform: scale(0.7);
+    z-index: 0;
+}
+
+#user2:hover {
+    color: var(--mid_blue);
+}
+
+.hamburg-bg {
+    height: 28px;
+    width: 28px;
+    position: absolute;
+    background-color: var(--white);
+    z-index: 1;
 }
