@@ -52,12 +52,12 @@ nav {
 
 #nav-links {
     display: flex;
-    justify-content: flex-end;
     align-items: center;
     list-style: none;
     margin: 0;
     line-height: 80px;
     padding-right: 25px;
+    padding-left: 0;
 }
 
 #nav-links li {
@@ -214,12 +214,12 @@ nav {
     background: var(--off_black);
     margin-bottom: 5px;
     border-radius: 2px;
-    transition: all 0.5s ease-in-out;
+    transition: all 0.35s ease-in-out;
     z-index: 2;
 }
 
 #hamburger-menu-wrapper {
-    display: flex;
+    display: none;
     align-items: center;
     justify-content: center;
     width: min-content;
@@ -253,7 +253,7 @@ nav {
 .line3-rotated {
     margin-bottom: 0;
     transform-origin: center;
-    transform: translate(0px, -9px) rotate(315deg);
+    transform: translate(0px, -9px) rotate(-225deg);
 }
 
 #mobile-menu {
@@ -325,6 +325,7 @@ nav {
     transform: scale(0);
     z-index: 0;
     cursor: pointer;
+    margin-top: -5px;
 }
 
 #user2:hover {

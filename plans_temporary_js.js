@@ -10,13 +10,16 @@ function responsiveNav() {
     let hamburg = document.getElementById("toggle")
     let navLinks = document.getElementById("nav-links")
     let user = document.getElementById("user2")
+    let hamburg_wrap = document.getElementById("hamburger-menu-wrapper")
 
     if (mq.matches) {
         navLinks.style.display = "none"
+        hamburg_wrap.style.display = "flex"
         user.style.opacity = "0"
         hamburg.style.display = "flex"
         user.style.display = "block"
     } else {
+        hamburg_wrap.style.display = "none"
         navLinks.style.display = "flex"
         user.style.display = "none"
         hamburg.style.display = "none"
