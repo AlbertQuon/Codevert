@@ -339,3 +339,70 @@ nav {
     background-color: var(--white);
     z-index: 1;
 }
+
+.sign-in-wrapper {
+    display: flex;
+    padding: 25px;
+    top: 50vh;
+    left: 50vw;
+    transform: translate(-50%, -50%);
+    flex-direction: column;
+    justify-content: center;
+    width: auto;
+    height: min-content;
+    z-index: 20;
+    position: fixed;
+    background-color: var(--off-white);
+}
+
+.sign-in-container {
+    width: min-content;
+    background-color: var(--white);
+    padding: 30px;
+    border-radius: 7px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+}
+
+.sign-in-container h4 {
+    padding: 0;
+    margin: 0;
+}
+
+.sign-in-txtbox {
+    padding: 3px;
+    margin: 20px 0 20px 0;
+    width: 35vw;
+    font-size: 1.1rem;
+    font-family: 'Montserrat', sans-serif;
+}
+
+.sign-in-wrapper h1 {
+    font-weight: 600;
+    color: var(--mid_blue);
+    margin: 0;
+    padding: 0 20px 20px 0;
+}
+
+form h4 {
+    font-weight: 500;
+}
+
+.sign-in-bottom {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.sign-in-bottom h4 {
+    font-weight: 500;
+    text-transform: capitalize;
+    transition: all 0.25s ease;
+}
+
+.sign-in-bottom h4:hover {
+    color: var(--mid_blue);
+    cursor: pointer;
+}
