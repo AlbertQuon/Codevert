@@ -1,6 +1,8 @@
+//makes the overall look responsive
 window.addEventListener("resize", plansLayout);
 window.addEventListener("resize", responsiveNav);
 
+//textbox restrictions
 document.getElementById("username").addEventListener("input", () => {
     confirm_info();
     clean_uName();
@@ -16,10 +18,13 @@ document.getElementById("password-confirm").addEventListener("input", () => {
     clean_pass2();
 });
 
-const mobileMenu = document.getElementById("toggle");
+
+//hamburger menu hover
+var mobileMenu = document.getElementById("toggle");
 mobileMenu.addEventListener("mouseover", changeColor);
 mobileMenu.addEventListener("mouseout", changeColorOff);
 
+//changes the top navigation bar at a certain window width
 function responsiveNav() {
     const mq = window.matchMedia( "(max-width: 850px)" )
     var hamburg = document.getElementById("toggle")
@@ -42,6 +47,7 @@ function responsiveNav() {
 
 }
 
+//hover function
 function changeColor() {
     var line1 = document.getElementById("line1")
     var line2 = document.getElementById("line2")
@@ -51,6 +57,7 @@ function changeColor() {
     line3.style.background = "var(--mid_blue)"
 }
 
+//hover off function
 function changeColorOff() {
     var line1 = document.getElementById("line1")
     var line2 = document.getElementById("line2")
@@ -60,6 +67,7 @@ function changeColorOff() {
     line3.style.background = "var(--off_black)"
 }
 
+//makes the layout of 'plans' responsive at a certain window width
 function plansLayout() {
     const mq = window.matchMedia( "(max-width: 950px)" )
     var root = document.documentElement
@@ -91,6 +99,7 @@ function plansLayout() {
     }
 }
 
+//toggle on/off the vertical nav on small screens
 function toggle() {
     var mobileMenu = document.getElementById("mobile-menu")
     var pos = mobileMenu.getBoundingClientRect()
@@ -125,24 +134,30 @@ function toggle() {
     }
 }
 
+
+//shows the sign in form 
 function sign_in_show() {
     var wrapper = document.getElementById("sign-in-wrapper")
     var overlay = document.getElementById("overlay")
 
     overlay.style.display = "block"
     overlay.style.opacity = "1"
+    wrapper.style.opacity = "1"
     wrapper.style.transform = "translate(-50%, -50%) scale(1)"
 }
 
+//hides the sign in form 
 function sign_in_exit() {
     var wrapper = document.getElementById("sign-in-wrapper")
     var overlay = document.getElementById("overlay")
 
-    wrapper.style.transform = "translate(-50%, -50%) scale(0)"
+    wrapper.style.opacity = "0"
+    wrapper.style.transform = "translate(-50%, -50%) scale(0.7)"
     overlay.style.opacity = "0"
     overlay.style.display = "none"
 }
 
+//shows register elements
 function register_show() {
     var register_elements = document.getElementById("register-elements")
     var register_header = document.getElementById("sign-in-header")
@@ -170,6 +185,7 @@ function register_show() {
     }
 }
 
+//password and username restrictions
 function confirm_info() {
     var pass = document.getElementById("password").value;
     var pass2 = document.getElementById("password-confirm").value;
@@ -187,8 +203,9 @@ function confirm_info() {
     }
 }
 
+//regExp function to eliminate special characters
 function matchFunction(string) {
-    var regExp = /[ !@#$%^&*()_+\-=\[\]{};':"\\|,.<>\/?]/;
+    var regExp = /[ !@#$%^&*()_+\-=\[\]{};':"\\|,.<>\/?]`/;
 
     if (string.match(regExp)) {
         newStr = string.replace(regExp, "")
@@ -198,6 +215,7 @@ function matchFunction(string) {
     }
 }
 
+//cleans all the unvalid input
 function clean_uName() {
     var uName = document.getElementById("username");
 
