@@ -1,3 +1,33 @@
  body {
      
  }
+
+ .landingHeader {
+    color: #fff !important;
+    padding: 12% 0 15% 7%;
+    background-color: #5680E9;
+    /* background-image: linear-gradient(to bottom, rgba(), rgba(), url(public/images/openaihackathon-1.jpg)); */
+    max-height: 100%;
+    background-size: cover;
+}
+
+.title {
+    color: #fff;
+    margin-bottom: 1%;
+}
+
+.subTitle {
+    color: #fff;
+    font-size: 18px;
+    width: inherit;
+    margin: 0;
+    float: left;
+}
+
+.landingButton {
+    margin-left: 1%;
+}
+
+.belowTitle {
+    margin-top: 2%;
+}
