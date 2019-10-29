@@ -15,18 +15,25 @@
           </div>
           <form>
             <h4>Username:</h4>
+            <h5 class="uName-note" id="register-note1">* Must contain a letter and at least 5 characters</h5>
             <input type="text" name="username" id="username" class="sign-in-txtbox">
             <h4>Password:</h4>
+            <h5 class="uName-note" id="register-note2">* Must contain at least 8 characters</h5>
             <input type="password" name="password" id="password" class="sign-in-txtbox">
+            <div id="register-elements">
+              <h4>Confirm password:</h4>
+            <input type="password" name="password" id="password-confirm" class="sign-in-txtbox">
+            </div>
+            
           </form>
           <div class="sign-in-bottom">
-            <a class="button" style="cursor: pointer;">Submit</a>
-            <a onclick="register_show();"><h4>Register</h4></a>
+            <input class="button" type="button" name="Submit" id="sign-in-btn" value="Submit">
+            <a onclick="register_show()"><h4 id="form-link">Register</h4></a>
           </div>
         </div>
       </div>
 
-      <div id="overlay"></div>
+      <div id="overlay" onclick="sign_in_exit();"></div>></div>
 
       <nav>
         <div id="logo"><img src="sprite.png" style="height: 65px; width: 65px;" alt="Logo"></div>

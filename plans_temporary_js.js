@@ -1,16 +1,35 @@
-window.addEventListener("resize", plansLayout)
-window.addEventListener("resize", responsiveNav)
+window.addEventListener("resize", plansLayout);
+window.addEventListener("resize", responsiveNav);
 
-const mobileMenu = document.getElementById("toggle")
-mobileMenu.addEventListener("mouseover", changeColor)
-mobileMenu.addEventListener("mouseout", changeColorOff)
+onpaste = "return false"
+.onpaste = "return false"
+.onpaste = "return false"
+
+document.getElementById("username").addEventListener("input", () => {
+    confirm_info();
+    clean_uName();
+});
+
+document.getElementById("password").addEventListener("input", () => {
+    confirm_info();
+    clean_pass();
+});
+
+document.getElementById("password-confirm").addEventListener("input", () => {
+    confirm_info();
+    clean_pass2();
+});
+
+const mobileMenu = document.getElementById("toggle");
+mobileMenu.addEventListener("mouseover", changeColor);
+mobileMenu.addEventListener("mouseout", changeColorOff);
 
 function responsiveNav() {
     const mq = window.matchMedia( "(max-width: 850px)" )
-    let hamburg = document.getElementById("toggle")
-    let navLinks = document.getElementById("nav-links")
-    let user = document.getElementById("user2")
-    let hamburg_wrap = document.getElementById("hamburger-menu-wrapper")
+    var hamburg = document.getElementById("toggle")
+    var navLinks = document.getElementById("nav-links")
+    var user = document.getElementById("user2")
+    var hamburg_wrap = document.getElementById("hamburger-menu-wrapper")
 
     if (mq.matches) {
         navLinks.style.display = "none"
@@ -28,18 +47,18 @@ function responsiveNav() {
 }
 
 function changeColor() {
-    let line1 = document.getElementById("line1")
-    let line2 = document.getElementById("line2")
-    let line3 = document.getElementById("line3")
+    var line1 = document.getElementById("line1")
+    var line2 = document.getElementById("line2")
+    var line3 = document.getElementById("line3")
     line1.style.background = "var(--mid_blue)"
     line2.style.background = "var(--mid_blue)"
     line3.style.background = "var(--mid_blue)"
 }
 
 function changeColorOff() {
-    let line1 = document.getElementById("line1")
-    let line2 = document.getElementById("line2")
-    let line3 = document.getElementById("line3")
+    var line1 = document.getElementById("line1")
+    var line2 = document.getElementById("line2")
+    var line3 = document.getElementById("line3")
     line1.style.background = "var(--off_black)"
     line2.style.background = "var(--off_black)"
     line3.style.background = "var(--off_black)"
@@ -47,7 +66,7 @@ function changeColorOff() {
 
 function plansLayout() {
     const mq = window.matchMedia( "(max-width: 950px)" )
-    let root = document.documentElement
+    var root = document.documentElement
     var plans = document.getElementById("plans")
     var cp = document.getElementById("codevert-premium")
     var cd = document.getElementById("plans-trial")
@@ -79,11 +98,10 @@ function plansLayout() {
 function toggle() {
     var mobileMenu = document.getElementById("mobile-menu")
     var pos = mobileMenu.getBoundingClientRect()
-    let user = document.getElementById("user2")
-    let root = document.documentElement
-    let line1 = document.getElementById("line1")
-    let line2 = document.getElementById("line2")
-    let line3 = document.getElementById("line3")
+    var user = document.getElementById("user2")
+    var line1 = document.getElementById("line1")
+    var line2 = document.getElementById("line2")
+    var line3 = document.getElementById("line3")
 
 
     if (pos.top == "-530") {
@@ -116,8 +134,7 @@ function sign_in_show() {
     var overlay = document.getElementById("overlay")
 
     overlay.style.display = "block"
-    overlay.style.visibility = "visible"
-    wrapper.style.display = "flex"
+    overlay.style.opacity = "1"
     wrapper.style.transform = "translate(-50%, -50%) scale(1)"
 }
 
@@ -125,8 +142,80 @@ function sign_in_exit() {
     var wrapper = document.getElementById("sign-in-wrapper")
     var overlay = document.getElementById("overlay")
 
-    wrapper.style.display = "none"
     wrapper.style.transform = "translate(-50%, -50%) scale(0)"
+    overlay.style.opacity = "0"
     overlay.style.display = "none"
-    overlay.style.visibility = "hidden"
+}
+
+function register_show() {
+    var register_elements = document.getElementById("register-elements")
+    var register_header = document.getElementById("sign-in-header")
+    var form_link = document.getElementById("form-link")
+    var sign_in_btn = document.getElementById("sign-in-btn")
+    var register_note1 = document.getElementById("register-note1")
+    var register_note2 = document.getElementById("register-note2")
+
+    if (register_header.textContent == "Sign in") {
+        sign_in_btn.disabled = true
+        register_elements.style.display = "flex"
+        register_header.textContent = "Register"
+        form_link.textContent = "Sign in"
+        register_note1.style.display = "flex"     
+        register_note2.style.display = "flex"
+        
+    } else {
+        register_elements.style.display = "none"
+        register_header.textContent = "Sign in"
+        form_link.textContent = "Register"
+        sign_in_btn.disabled = false
+        register_note1.style.display = "none"     
+        register_note2.style.display = "none" 
+
+    }
+}
+
+function confirm_info() {
+    var pass = document.getElementById("password").value;
+    var pass2 = document.getElementById("password-confirm").value;
+    var register = document.getElementById("sign-in-btn");
+    var uName = document.getElementById("username");
+    var uName_val = uName.value
+    var wrapper_header = document.getElementById("sign-in-header")
+
+    if (wrapper_header.textContent == "Sign in") {
+        register.disabled = false
+    } else if (pass == pass2 && uName_val !== "" && uName_val.length > 4 && isNaN(uName_val) == true && pass2.length > 7 && pass.length > 7) {
+        register.disabled = false
+    } else {
+        register.disabled = true
+    }
+}
+
+function matchFunction(string) {
+    var regExp = /[ !@#$%^&*()_+\-=\[\]{};':"\\|,.<>\/?]/;
+
+    if (string.match(regExp)) {
+        newStr = string.replace(regExp, "")
+        return newStr;
+    } else {
+        return string;
+    }
+}
+
+function clean_uName() {
+    var uName = document.getElementById("username");
+
+    uName.value = matchFunction(uName.value);
+}
+
+function clean_pass() {
+    var pass = document.getElementById("password");
+
+    pass.value = matchFunction(pass.value);
+}
+
+function clean_pass2() {
+    var pass2 = document.getElementById("password-confirm")
+
+    pass2.value = matchFunction(pass2.value) 
 }

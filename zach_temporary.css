@@ -20,6 +20,8 @@ body {
     --off_black: rgb(43, 43, 43);
     --hamburg_translate: 9;
     --hamburg_rotate: 45;
+    --sign_in_width: min-content;
+    --sign_in_height: min-content;
 }
 
 nav {
@@ -341,19 +343,17 @@ nav {
 }
 
 .sign-in-wrapper {
-    display: none;
-    padding: 20px;
+    display: flex;
     max-width: 680px;
     top: 50vh;
-    left: 50vw;
+    left: 50%;
     transform: translate(-50%, -50%) scale(0);
     flex-direction: column;
     justify-content: center;
-    width: auto;
+    width: min-content;
     height: min-content;
     z-index: 100;
     position: fixed;
-    background-color: var(--off-white);
     border-radius: 7px;
     transition: all 0.25s ease-in-out;
 }
@@ -369,6 +369,18 @@ nav {
     color: var(--off_black);
 }
 
+#sign-in-btn {
+    border: none;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 1rem;
+    cursor: pointer;
+}
+
+#sign-in-btn:disabled {
+    opacity: 0.5;
+    cursor: default;
+}
+
 .sign-in-container h4 {
     padding: 0;
     margin: 0;
@@ -377,7 +389,8 @@ nav {
 .sign-in-txtbox {
     padding: 5px 10px 5px 10px;
     margin: 20px 0 20px 0;
-    width: 35vw;
+    width: calc(60vw - 20px);
+    max-width: 640px;
     font-size: 1.1rem;
     font-family: 'Montserrat', sans-serif;
     border: 1px solid rgb(212, 212, 212);
@@ -436,12 +449,36 @@ form h4 {
 
 #overlay {
     display: none;
-    visibility: hidden;
-    width: 100vw;
-    height: calc(100vh + 150px);
+    opacity: 0;
+    width: 150%;
+    height: 150%;
     position: fixed;
     z-index: 99;
     background-color: rgba(51, 51, 51, 0.479);
     margin-top: -150px;
     transition: all 0.25s ease-in-out;
 }
+
+#register-elements {
+    display: none;
+    flex-direction: column;
+}
+
+.uName-note {
+    font-weight: 400;
+    font-size: 0.8rem;
+    padding: 0;
+    margin: 20px 0 0 0;
+    color: var(--mid_blue);
+    font-style: italic;
+}
+
+#register-note1 {
+    display: none;
+}
+
+#register-note2 {
+    display: none;
+}
+
+
