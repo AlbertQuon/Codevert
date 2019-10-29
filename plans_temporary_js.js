@@ -1,10 +1,6 @@
 window.addEventListener("resize", plansLayout);
 window.addEventListener("resize", responsiveNav);
 
-onpaste = "return false"
-.onpaste = "return false"
-.onpaste = "return false"
-
 document.getElementById("username").addEventListener("input", () => {
     confirm_info();
     clean_uName();
