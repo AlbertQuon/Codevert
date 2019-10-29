@@ -1,0 +1,61 @@
+﻿html {
+    overflow-y: scroll;
+}
+
+
+body {
+    background: #5680E9;
+    
+}
+#main {
+    float: right;
+    width: 82%;
+    min-height: 100% !important;
+    height: 100%;
+    background: #f5f8ff;
+    position: relative;
+    top: 2px;
+}
+
+#topics {
+    float: left;
+    width: 15%;
+    min-height: 100% !important;
+    height: 100%;
+    background: #f5f855;
+    position: relative;
+    
+    top: 2px;
+}
+
+h1 {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 900;
+    font-size: 1.8rem;
+    color: #f4f5ff;
+}
+
+.pagetitle {
+    font-family: '', sans-serif;
+    font-weight: 600;
+    font-size: 3rem;
+    color: #8860D0;
+    padding-left: 5px;
+}
+
+.question {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 300;
+    font-size: 2rem;
+    color: #8860D0;
+    padding-left: 50px;
+}
+
+.answer {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 300;
+    font-size: 1rem;
+    color: #8860D0;
+    padding-left: 90px;
+}
+
