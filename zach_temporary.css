@@ -342,10 +342,11 @@ nav {
 
 .sign-in-wrapper {
     display: flex;
-    padding: 25px;
+    padding: 20px;
+    max-width: 680px;
     top: 50vh;
     left: 50vw;
-    transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%) scale(0);
     flex-direction: column;
     justify-content: center;
     width: auto;
@@ -353,6 +354,8 @@ nav {
     z-index: 20;
     position: fixed;
     background-color: var(--off-white);
+    border-radius: 7px;
+    transition: all 0.25s ease-in-out;
 }
 
 .sign-in-container {
@@ -363,6 +366,7 @@ nav {
     display: flex;
     flex-direction: column;
     justify-content: flex-start;
+    color: var(--off_black);
 }
 
 .sign-in-container h4 {
@@ -371,18 +375,24 @@ nav {
 }
 
 .sign-in-txtbox {
-    padding: 3px;
+    padding: 5px 10px 5px 10px;
     margin: 20px 0 20px 0;
     width: 35vw;
     font-size: 1.1rem;
     font-family: 'Montserrat', sans-serif;
+    border: 1px solid rgb(212, 212, 212);
+    border-radius: 5px;
+    display: inline-block;
+}
+
+.sign-in-txtbox:focus {
+    border: 1px solid var(--mid_blue);
 }
 
 .sign-in-wrapper h1 {
     font-weight: 600;
     color: var(--mid_blue);
     margin: 0;
-    padding: 0 20px 20px 0;
 }
 
 form h4 {
@@ -398,11 +408,29 @@ form h4 {
 
 .sign-in-bottom h4 {
     font-weight: 500;
-    text-transform: capitalize;
-    transition: all 0.25s ease;
+    transition: all 0.25s ease-in-out;
 }
 
 .sign-in-bottom h4:hover {
     color: var(--mid_blue);
     cursor: pointer;
 }
+
+.sign-in-top {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding-bottom: 20px;
+    justify-content: space-between;
+}
+
+.fa-arrow-right {
+    font-size: 1.3rem;
+    transition: all 0.25s ease-in-out;
+}
+
+.fa-arrow-right:hover {
+    color: var(--mid_blue);
+    cursor: pointer;
+}
+

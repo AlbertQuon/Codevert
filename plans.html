@@ -6,9 +6,13 @@
         <script src="https://kit.fontawesome.com/be738c2079.js" crossorigin="anonymous"></script>
     </head>
     <body onload="plansLayout(); responsiveNav();">
+
       <div class="sign-in-wrapper">
         <div class="sign-in-container">
-          <h1 id="sign-in-header">Sign in</h1>
+          <div class="sign-in-top">
+              <h1 id="sign-in-header">Sign in</h1>
+              <a onclick="sign_in_exit();"><i class="fas fa-arrow-right"></i></a>
+          </div>
           <form>
             <h4>Username:</h4>
             <input type="text" name="username" id="username" class="sign-in-txtbox">
@@ -17,10 +21,12 @@
           </form>
           <div class="sign-in-bottom">
             <a class="button" style="cursor: pointer;">Submit</a>
-            <h4>register here</h4>
+            <a onclick="register_show();"><h4>Register</h4></a>
           </div>
         </div>
+        <div class="overlay"></div>
       </div>
+
       <nav>
         <div id="logo"><img src="sprite.png" style="height: 65px; width: 65px;" alt="Logo"></div>
         <ul id="nav-links">
@@ -30,10 +36,10 @@
             <li><a href="#">Plans</a></li>
             <li><a href="#">Features</a></li>
             <li><a href="#">Contact</a></li>
-            <li><a><i class="fas fa-user" id="user"></i></a></li>
+            <li><a onclick="sign_in_show();"><i class="fas fa-user" id="user"></i></a></li>
         </ul>
         <div id="hamburger-menu-wrapper" onclick="toggle()">
-            <a><i class="fas fa-user" id="user2"></i></a>
+            <a onclick="sign_in_show();"><i class="fas fa-user" id="user2"></i></a>
             <div class="toggle" id="toggle">
               <span class="line1" id="line1"></span>
               <span class="line2" id="line2"></span>
