@@ -7,9 +7,45 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Codevert Features</title>
 </head>
+<link rel="stylesheet" href="style_guidelines.css"> 
 <style>
+    .featurehead{
+        width: 50%;
+        padding-left: 43%;
+    }
+    #extrafeatures{
+        background-color: #80dbff;
+    }
+    #faqheading{
+        text-align: center;
+    }
+    #producttitle{
+        text-align: center;
+        padding-top: 10%;
+        color: darkblue;
+    }
+    #features{
+        padding-top: 1%;
+    }
+    .featurehead{
+        color: black;
+        padding-top:10%;
+        padding-right:10%;
+        padding-bottom:20%;
+        text-align: center;
+    }
+    .featureinfo{
+        padding-left:10%;
+        margin-bottom:10%;
+    }
+    p {
+        color: black;
+    }
+
+
+    
 </style>
-<link rel="stylesheet" href="style_guidelines.css">
+
 
 <body>
     <nav>
@@ -17,48 +53,69 @@
             <span>INTERCODE</span>
         </div>
         <ul id="nav-links">
-            <li><a href="#">Home</a></li>
-            <li><a href="#">About</a></li>
-            <li><a href="#">Products</a></li>
-            <li><a href="#">Plans</a></li>
-            <li><a href="#">Contact</a></li>
+            <li><a href="home.html">Home</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="features.html">Products</a></li>
+            <li><a href="plans.html">Plans</a></li>
+            <li><a href="contact.html">Contact</a></li>
             <li><a><i class="fas fa-user" id="user"></i></a></li>
         </ul>
         </div>
     </nav>
-    <div id="product title">
-        <h1>Codevert</h1>
-        <p>Translate Code in real time....(description)</p>
-        <img>
+    <h2 id="producttitle">Features</h2>
+    <div class="product-feature">
+        <table id="features">
+            <tr>
+                <th>
+                    <h3 class='featurehead'>Instant Translation</h3>
+                </th>
+                <td class = "featureinfo">
+                    <p>Translate code that you've written into another programming language with the same structure.
+                         Java to Python? Easy. C++ to Perl? No problem. It's that simple.
+                    </p>
+                </td>
+                <td><img width = "250px" src = "https://blog.hyperiondev.com/wp-content/uploads/2018/06/Blog-Article-How-many-programming-languages-should-I-learn.jpg"></td>
+                
+            </tr>
+            <tr>
+                <th>
+                    <h3 class='featurehead'>Open Source</h3>
+                </th>
+                <td class = "featureinfo">
+                    <p>Open source and integrates easily with </p>
+                </td>
+                <td><img src = ""></td>
+            </tr>
+            <tr>
+                <th>
+                    <h3 class='featurehead'>Powerful Learning Tool</h3>
+                </th>
+                <td class = "featureinfo">
+                    <p>You understand your code but what about using it to learn another language. Learn new languages with your own code!</p>
+                </td>
+                <td><img src = ""></td>
+            </tr>
+        </table>
     </div>
-    <div class="product feature">
-        <h3 class="feature heading">Feature</h3>
-        <p>description</p>
-        <img>
-    </div>
-    <div class="product feature">
-        <h3 class="feature heading">Feature</h3>
-        <p>description</p>
-        <img>
-    </div>
-    <div class="product feature">
-        <h3 class="feature heading">Feature</h3>
-        <p>description</p>
-        <img>
-    </div>
-    <div id="extra features">
+    <div id="extrafeatures" style = "padding-block-start: 1%; padding-block-end: 2%;">
         <h2>Additional Features</h2>
-        <h4>Additional Feature</h4>
-        <p>Description</p>
-        <h4>Additional Feature</h4>
-        <p>Description</p>
+        <table id = "extraFeat">
+            <tr>
+                <th>IDE Supported</th>
+                <td>Supports popular IDEs and text editors</td>
+            </tr>
+            <tr>
+                <th>Feature</th>
+                <td>description</td>
+            </tr>
+        </table>
     </div>
     <div id="faq">
-        <h2>FAQ</h2>
+        <h2 id = "faqheading">FAQ</h2>
         <ul>
-            <li><a href="#">Question</a></li>
-            <li><a href="#">Question</a></li>
-            <li><a href="#">Question</a></li>
+            <li><a href="#">Where can I install?</a></li>
+            <li><a href="#">What applications are compatible?</a></li>
+            <li><a href="#">Can I use it with any language?</a></li>
         </ul>
     </div>
 </body>
