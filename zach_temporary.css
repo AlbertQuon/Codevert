@@ -345,9 +345,10 @@ nav {
 .sign-in-wrapper {
     display: flex;
     max-width: 680px;
+    opacity: 0;
     top: 50vh;
     left: 50%;
-    transform: translate(-50%, -50%) scale(0);
+    transform: translate(-50%, -50%) scale(0.7);
     flex-direction: column;
     justify-content: center;
     width: min-content;
@@ -470,7 +471,7 @@ form h4 {
     padding: 0;
     margin: 20px 0 0 0;
     color: var(--mid_blue);
-    font-style: italic;
+    font-style: none;
 }
 
 #register-note1 {
