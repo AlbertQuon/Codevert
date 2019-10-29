@@ -111,3 +111,22 @@ function toggle() {
     }
 }
 
+function sign_in_show() {
+    var wrapper = document.getElementById("sign-in-wrapper")
+    var overlay = document.getElementById("overlay")
+
+    overlay.style.display = "block"
+    overlay.style.visibility = "visible"
+    wrapper.style.display = "flex"
+    wrapper.style.transform = "translate(-50%, -50%) scale(1)"
+}
+
+function sign_in_exit() {
+    var wrapper = document.getElementById("sign-in-wrapper")
+    var overlay = document.getElementById("overlay")
+
+    wrapper.style.display = "none"
+    wrapper.style.transform = "translate(-50%, -50%) scale(0)"
+    overlay.style.display = "none"
+    overlay.style.visibility = "hidden"
+}
