@@ -18,7 +18,6 @@ document.getElementById("password-confirm").addEventListener("input", () => {
     clean_pass2();
 });
 
-
 //hamburger menu hover
 var mobileMenu = document.getElementById("toggle");
 mobileMenu.addEventListener("mouseover", changeColor);
@@ -39,6 +38,9 @@ function responsiveNav() {
         hamburg.style.display = "flex"
         user.style.display = "block"
     } else {
+        if (toggle() === true) {
+            toggle();
+        }
         hamburg_wrap.style.display = "none"
         navLinks.style.display = "flex"
         user.style.display = "none"
@@ -120,6 +122,7 @@ function toggle() {
         line2.classList.add("line2-scaled")
         line1.classList.add("line1-rotated")
         line3.classList.add("line3-rotated")
+        return true
     } else {
         mobileMenu.style.top = "-530px"
         mobileMenu.style.opacity = "0"
@@ -131,6 +134,7 @@ function toggle() {
         line1.classList.remove("line1-rotated")
         line3.classList.remove("line3-rotated")
         line2.classList.remove("line2-scaled")
+        return false
     }
 }
 
@@ -142,6 +146,7 @@ function sign_in_show() {
 
     overlay.style.display = "block"
     overlay.style.opacity = "1"
+    wrapper.style.display = "flex"
     wrapper.style.opacity = "1"
     wrapper.style.transform = "translate(-50%, -50%) scale(1)"
 }
@@ -153,6 +158,7 @@ function sign_in_exit() {
 
     wrapper.style.opacity = "0"
     wrapper.style.transform = "translate(-50%, -50%) scale(0.7)"
+    wrapper.style.display = "none"
     overlay.style.opacity = "0"
     overlay.style.display = "none"
 }
