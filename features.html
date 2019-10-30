@@ -51,7 +51,7 @@
 </style>
 
 
-<body onload="plansLayout(); gitresponsiveNav();">
+<body onload="responsiveNav();">
 
         <div class="sign-in-wrapper" id="sign-in-wrapper">
           <div class="sign-in-container">
@@ -77,18 +77,17 @@
             </div>
           </div>
         </div>
-  
+    
         <div id="overlay" onclick="sign_in_exit();"></div>></div>
-  
+    
         <nav>
           <div id="logo"><img src="sprite.png" style="height: 65px; width: 65px;" alt="Logo"></div>
           <ul id="nav-links">
-              <li><a href="#">Home</a></li>
-              <li><a href="#">About</a></li>
-              <li><a href="#">Products</a></li>
-              <li><a href="#">Plans</a></li>
-              <li><a href="#">Features</a></li>
-              <li><a href="#">Contact</a></li>
+              <li><a href="home.html">Home</a></li>
+              <li><a href="about.html">About</a></li>
+              <li><a href="plans.html">Plans</a></li>
+              <li><a href="features.html">Features</a></li>
+              <li><a href="contact.html">Contact</a></li>
               <li><a onclick="sign_in_show();"><i class="fas fa-user" id="user"></i></a></li>
           </ul>
           <div id="hamburger-menu-wrapper" onclick="toggle()">
@@ -101,15 +100,14 @@
               </div>
           </div>
       </nav>
-  
+    
       <div id="mobile-menu">
           <ul>
-            <li><a href="#" onclick="toggle()">Home</a></li>
-            <li><a href="#" onclick="toggle()">About</a></li>
-            <li><a href="#" onclick="toggle()">Products</a></li>
-            <li><a href="#" onclick="toggle()">Plans</a></li>
-            <li><a href="#" onclick="toggle()">Features</a></li>
-            <li><a href="#" id="mobile-contact" onclick="toggle()">Contact</a></li>
+            <li><a href="home.html" onclick="toggle()">Home</a></li>
+            <li><a href="about.html" onclick="toggle()">About</a></li>
+            <li><a href="plans.html" onclick="toggle()">Plans</a></li>
+            <li><a href="features.html" onclick="toggle()">Features</a></li>
+            <li><a href="contact.html" id="mobile-contact" onclick="toggle()">Contact</a></li>
           </ul>
       </div>
 
