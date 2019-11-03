@@ -482,4 +482,10 @@ form h4 {
     display: none;
 }
 
+.section {
+    list-style-type: none;
+}
 
+.section div {
+    margin-top: 80px;
+}
