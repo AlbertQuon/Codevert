@@ -13,7 +13,8 @@
 </head>
 
 <style>
-    /*----------------HEADING--------------------- */
+    /*----------------HEADING--------------------- */   
+    
     #producthead{
         padding-top: 6%;
         padding-bottom: 2%;
@@ -21,8 +22,7 @@
         text-align: center;
         font-size: 32px;
     }
-    
-    
+       
     /*----------------FEATURES--------------------- */
 
     #features-table{
@@ -36,34 +36,61 @@
         text-align: center;
         font-size: 26px;
         padding-right: 5%;
-        border-right: 1px rgb(134, 134, 134) groove;
+        border-right: 1px rgba(72, 120, 253, 0.486) groove;
     }
     .featureinfo{
         font-size:18px;
-        padding-left: 5%;
-        padding-right: 10%;
+        padding-left:5%;
     }
+    .featurePic{
+        border-radius: 50%;
+        border: 1px solid;
+        height: auto;
+        max-height: 50%;
+        width: auto;
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+        border-color: lightslategray;
+    }        
 
-    
+    .featurePicContainer{
+        padding-right: 10%;
+        padding-left: 10%;
+        
+    }   
 
     /*----------------EXTRA FEATURES--------------------- */
+
     #extraFeatTable{
-        padding-left: 10%;
         border-collapse: collapse;
     }
     #extraFeatures{
-        background-color: #80dbff;
-        padding-block-start: 1%; 
-        padding-block-end: 2%;
+        background-color: rgb(128, 219, 255,0.275);
+        padding-left: 20%;
+        padding-top: 1%;
+        padding-bottom: 1%;
+        padding-right: 20%
     }
     #extraFeatHead{
         text-align: center;
+        font-size: 27px;
     }
     .extraFeatRow{
-        border: solid;
-        border-width: 1px 0;
+        border-top: 2px solid;
     }
+    .extraFeatureInfo{
+        padding-left: 10%;
+        padding-top: 3%;
+        padding-bottom: 3%;
+        font-size: 18px;
+    }
+    #extraFeatTableTitle{
+        font-size: 23px;
+    }
+
     /*----------------FAQ--------------------- */
+    
     #faqheading{
         text-align: center;
         font-size: 30px;
@@ -71,8 +98,23 @@
     #questionslist{
         padding-left:10%;
     }
-    
-    
+    a:link {
+        text-decoration: none;
+    }
+    a:visited {
+        color: black;
+    }
+    a:hover {
+        text-decoration: underline;
+    }
+    a:active {
+        color: #80dbff;
+        text-decoration: none;
+    }
+    .question{
+        font-size: 20px;
+        padding-top: 1%;
+    }
 </style>
 
 
@@ -141,7 +183,7 @@
     <div id = "producthead">
     <h2 id="producttitle">FEATURES</h2>
     </div>
-    <div id="product-feature">
+    <div id="productFeature">
         <table id="features-table">
             <tr id="features-table-row">
                 <th class='featurehead'>
@@ -152,8 +194,7 @@
                          Java to Python? C++ to Perl? No problem. It's simple to use.
                     </p>
                 </td>
-                <td><img></td>
-                
+                <td class = "featurePicContainer"><img class = "featurePic" src = "programing-coding-languages.png" style="max-height: 30%;"></td>
             </tr>
             <tr id="features-table-row">
                 <th class='featurehead'>
@@ -162,7 +203,7 @@
                 <td class = "featureinfo">
                     <p>Completely open-source with the full version, allowing you to customize the tool however you want and integrate your own libraries.</p>
                 </td>
-                <td><img src = ""></td>
+                <td class = "featurePicContainer"><img src = "opensource.png" class = "featurePic"></td>
             </tr>
             <tr id="features-table-row">
                 <th class='featurehead'>
@@ -173,25 +214,29 @@
                         deeper understanding on what makes each language unique and useful.
                     </p>
                 </td>
-                <td><img src = ""></td>
+                <td class = "featurePicContainer"><img src = "education.png" class ="featurePic"></td>
             </tr>
         </table>
     </div>
     <div id="extraFeatures">
         <h2 id = "extraFeatHead">Additional Features</h2>
         <table id = "extraFeatTable">
-            <tr class = "extraFeatRow">
-                <th id = "extraFeatTableTitle">IDE Supported</th>
-                <td>Supports popular IDEs and text editors</td>
+            <tr class = "extraFeatRow" style = "border: none">
+                <th id = "extraFeatTableTitle">IDE Integrated</th>
+                <td class = "extraFeatureInfo">Supports popular IDEs and text editors.</td>
             </tr>
             <tr class = "extraFeatRow">
                 <th id = "extraFeatTableTitle">24/7 Support</th>
-                <td>Have any troubles? We have a support team that can answer your emails and calls at any time.</td>
+                <td class = "extraFeatureInfo">Have any troubles? We have a support team that can answer your emails and calls.</td>
+            </tr>
+            <tr class = "extraFeatRow">
+                <th id = "extraFeatTableTitle">Library Support</th>
+                <td class = "extraFeatureInfo">Supports the <b>built-in</b> and <b>custom</b> libraries for each language.</td>
             </tr>
         </table>
     </div>
     <div id="faq">
-        <h2 id = "faqheading">FAQ</h2>
+        <h2 id = "faqheading">FAQ</h3>
         <ul id = "questionslist">
             <li class = "question"><a href="contact.html">Where can I install?</a></li>
             <li class = "question"><a href="contact.html">What applications are compatible?</a></li>
