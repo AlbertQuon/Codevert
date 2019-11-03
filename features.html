@@ -11,42 +11,67 @@
         <script src="https://kit.fontawesome.com/be738c2079.js" crossorigin="anonymous"></script>
         <script type="text/javascript" src="plans_temporary_js.js"></script>
 </head>
-<link rel="stylesheet" href="style_guidelines.css"> 
+
 <style>
-    .featurehead{
-        width: 50%;
-        padding-left: 43%;
-    }
-    #extrafeatures{
-        background-color: #80dbff;
-    }
-    #faqheading{
+    /*----------------HEADING--------------------- */
+    #producthead{
+        padding-top: 6%;
+        padding-bottom: 2%;
+        background-color: #84ceeb;
         text-align: center;
+        font-size: 32px;
     }
-    #producttitle{
-        text-align: center;
-        padding-top: 10%;
-        color: darkblue;
-    }
-    #features{
+    
+    
+    /*----------------FEATURES--------------------- */
+
+    #features-table{
         padding-top: 1%;
+        padding-bottom: 1%;
+        padding-left: 15%;
+        border-collapse: separate;
     }
     .featurehead{
         color: black;
-        padding-top:10%;
-        padding-right:10%;
-        padding-bottom:20%;
         text-align: center;
+        font-size: 26px;
+        padding-right: 5%;
+        border-right: 1px rgb(134, 134, 134) groove;
     }
     .featureinfo{
+        font-size:18px;
+        padding-left: 5%;
+        padding-right: 10%;
+    }
+
+    
+
+    /*----------------EXTRA FEATURES--------------------- */
+    #extraFeatTable{
+        padding-left: 10%;
+        border-collapse: collapse;
+    }
+    #extraFeatures{
+        background-color: #80dbff;
+        padding-block-start: 1%; 
+        padding-block-end: 2%;
+    }
+    #extraFeatHead{
+        text-align: center;
+    }
+    .extraFeatRow{
+        border: solid;
+        border-width: 1px 0;
+    }
+    /*----------------FAQ--------------------- */
+    #faqheading{
+        text-align: center;
+        font-size: 30px;
+    }
+    #questionslist{
         padding-left:10%;
-        margin-bottom:10%;
     }
-    p {
-        color: black;
-    }
-
-
+    
     
 </style>
 
@@ -83,12 +108,12 @@
         <nav>
           <div id="logo"><img src="sprite.png" style="height: 65px; width: 65px;" alt="Logo"></div>
           <ul id="nav-links">
-              <li><a href="#">Home</a></li>
-              <li><a href="#">About</a></li>
-              <li><a href="#">Products</a></li>
-              <li><a href="#">Plans</a></li>
-              <li><a href="#">Features</a></li>
-              <li><a href="#">Contact</a></li>
+              <li><a href="home.html">Home</a></li>
+              <li><a href="about.html">About</a></li>
+              <li><a href="product.html">Products</a></li>
+              <li><a href="plans.html">Plans</a></li>
+              <li><a href="features.html">Features</a></li>
+              <li><a href="contact.html">Contact</a></li>
               <li><a onclick="sign_in_show();"><i class="fas fa-user" id="user"></i></a></li>
           </ul>
           <div id="hamburger-menu-wrapper" onclick="toggle()">
@@ -113,61 +138,64 @@
           </ul>
       </div>
 
-    <!--your code-->
-    <h2 id="producttitle">Features</h2>
-    <div class="product-feature">
-        <table id="features">
-            <tr>
-                <th>
-                    <h3 class='featurehead'>Instant Translation</h3>
+    <div id = "producthead">
+    <h2 id="producttitle">FEATURES</h2>
+    </div>
+    <div id="product-feature">
+        <table id="features-table">
+            <tr id="features-table-row">
+                <th class='featurehead'>
+                    <h3 >Coding Translation</h3>
                 </th>
                 <td class = "featureinfo">
                     <p>Translate code that you've written into another programming language with the same structure.
-                         Java to Python? Easy. C++ to Perl? No problem. It's that simple.
+                         Java to Python? C++ to Perl? No problem. It's simple to use.
                     </p>
                 </td>
-                <td><img width = "250px" src = "https://blog.hyperiondev.com/wp-content/uploads/2018/06/Blog-Article-How-many-programming-languages-should-I-learn.jpg"></td>
+                <td><img></td>
                 
             </tr>
-            <tr>
-                <th>
-                    <h3 class='featurehead'>Open Source</h3>
+            <tr id="features-table-row">
+                <th class='featurehead'>
+                    <h3>Open-Source</h3>
                 </th>
                 <td class = "featureinfo">
-                    <p>Open source and integrates easily with </p>
+                    <p>Completely open-source with the full version, allowing you to customize the tool however you want and integrate your own libraries.</p>
                 </td>
                 <td><img src = ""></td>
             </tr>
-            <tr>
-                <th>
-                    <h3 class='featurehead'>Powerful Learning Tool</h3>
+            <tr id="features-table-row">
+                <th class='featurehead'>
+                    <h3>A Powerful Learning Tool</h3>
                 </th>
                 <td class = "featureinfo">
-                    <p>You understand your code but what about using it to learn another language. Learn new languages with your own code!</p>
+                    <p>Can you understand your own code in another language? This tool can teach you! Figure out the differences between each language and gain a 
+                        deeper understanding on what makes each language unique and useful.
+                    </p>
                 </td>
                 <td><img src = ""></td>
             </tr>
         </table>
     </div>
-    <div id="extrafeatures" style = "padding-block-start: 1%; padding-block-end: 2%;">
-        <h2>Additional Features</h2>
-        <table id = "extraFeat">
-            <tr>
-                <th>IDE Supported</th>
+    <div id="extraFeatures">
+        <h2 id = "extraFeatHead">Additional Features</h2>
+        <table id = "extraFeatTable">
+            <tr class = "extraFeatRow">
+                <th id = "extraFeatTableTitle">IDE Supported</th>
                 <td>Supports popular IDEs and text editors</td>
             </tr>
-            <tr>
-                <th>Feature</th>
-                <td>description</td>
+            <tr class = "extraFeatRow">
+                <th id = "extraFeatTableTitle">24/7 Support</th>
+                <td>Have any troubles? We have a support team that can answer your emails and calls at any time.</td>
             </tr>
         </table>
     </div>
     <div id="faq">
         <h2 id = "faqheading">FAQ</h2>
-        <ul>
-            <li><a href="#">Where can I install?</a></li>
-            <li><a href="#">What applications are compatible?</a></li>
-            <li><a href="#">Can I use it with any language?</a></li>
+        <ul id = "questionslist">
+            <li class = "question"><a href="contact.html">Where can I install?</a></li>
+            <li class = "question"><a href="contact.html">What applications are compatible?</a></li>
+            <li class = "question"><a href="contact.html">Can I use it with any language?</a></li>
         </ul>
     </div>
 </body>
