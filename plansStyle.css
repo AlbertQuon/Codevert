@@ -343,7 +343,7 @@ nav {
 }
 
 .sign-in-wrapper {
-    display: flex;
+    display: none;
     max-width: 680px;
     opacity: 0;
     top: 50vh;
@@ -482,4 +482,10 @@ form h4 {
     display: none;
 }
 
+.section {
+    list-style-type: none;
+}
 
+.section div {
+    margin-top: 80px;
+}

@@ -1,3 +1,5 @@
+window.toggled = false
+
 //makes the overall look responsive
 window.addEventListener("resize", plansLayout);
 window.addEventListener("resize", responsiveNav);
@@ -17,7 +19,6 @@ document.getElementById("password-confirm").addEventListener("input", () => {
     confirm_info();
     clean_pass2();
 });
-
 
 //hamburger menu hover
 var mobileMenu = document.getElementById("toggle");
@@ -39,12 +40,14 @@ function responsiveNav() {
         hamburg.style.display = "flex"
         user.style.display = "block"
     } else {
+        if (toggled === true) {
+            toggleOff();
+        } 
         hamburg_wrap.style.display = "none"
         navLinks.style.display = "flex"
         user.style.display = "none"
         hamburg.style.display = "none"
     }
-
 }
 
 //hover function
@@ -120,6 +123,7 @@ function toggle() {
         line2.classList.add("line2-scaled")
         line1.classList.add("line1-rotated")
         line3.classList.add("line3-rotated")
+        toggled = true
     } else {
         mobileMenu.style.top = "-530px"
         mobileMenu.style.opacity = "0"
@@ -131,9 +135,28 @@ function toggle() {
         line1.classList.remove("line1-rotated")
         line3.classList.remove("line3-rotated")
         line2.classList.remove("line2-scaled")
+        toggled = false
     }
 }
 
+function toggleOff() {
+    var mobileMenu = document.getElementById("mobile-menu")
+    var user = document.getElementById("user2")
+    var line1 = document.getElementById("line1")
+    var line2 = document.getElementById("line2")
+    var line3 = document.getElementById("line3")
+
+    mobileMenu.style.top = "-530px"
+    mobileMenu.style.opacity = "0"
+    //user icon animation
+    user.style.marginRight = "-42px"
+    user.style.transform = "scale(0)"
+    user.style.opacity = "0"
+    //hamburger menu animation
+    line1.classList.remove("line1-rotated")
+    line3.classList.remove("line3-rotated")
+    line2.classList.remove("line2-scaled")
+}
 
 //shows the sign in form 
 function sign_in_show() {
@@ -142,6 +165,7 @@ function sign_in_show() {
 
     overlay.style.display = "block"
     overlay.style.opacity = "1"
+    wrapper.style.display = "flex"
     wrapper.style.opacity = "1"
     wrapper.style.transform = "translate(-50%, -50%) scale(1)"
 }
@@ -153,6 +177,7 @@ function sign_in_exit() {
 
     wrapper.style.opacity = "0"
     wrapper.style.transform = "translate(-50%, -50%) scale(0.7)"
+    wrapper.style.display = "none"
     overlay.style.opacity = "0"
     overlay.style.display = "none"
 }
