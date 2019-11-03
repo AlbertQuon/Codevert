@@ -7,47 +7,119 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Codevert Features</title>
     <link rel="stylesheet" type="text/css" href="plansStyle.css">
-    <link href="https://fonts.googleapis.com/css?family=Montserrat&display=swap" rel="stylesheet">
-    <script src="https://kit.fontawesome.com/be738c2079.js" crossorigin="anonymous"></script>
-    
-    <style>
-            .featurehead{
-                width: 50%;
-                padding-left: 43%;
-            }
-            #extrafeatures{
-                background-color: #80dbff;
-            }
-            #faqheading{
-                text-align: center;
-            }
-            #producttitle{
-                text-align: center;
-                padding-top: 10%;
-                color: darkblue;
-            }
-            #features{
-                padding-top: 1%;
-            }
-            .featurehead{
-                color: black;
-                padding-top:10%;
-                padding-right:10%;
-                padding-bottom:20%;
-                text-align: center;
-            }
-            .featureinfo{
-                padding-left:10%;
-                margin-bottom:10%;
-            }
-            p {
-                color: black;
-            }
-        
-        
-            
-        </style>
+        <link href="https://fonts.googleapis.com/css?family=Montserrat&display=swap" rel="stylesheet">
+        <script src="https://kit.fontawesome.com/be738c2079.js" crossorigin="anonymous"></script>
+        <script type="text/javascript" src="plans_temporary_js.js"></script>
 </head>
+
+<style>
+    /*----------------HEADING--------------------- */   
+    
+    #producthead{
+        padding-top: 6%;
+        padding-bottom: 2%;
+        background-color: #84ceeb;
+        text-align: center;
+        font-size: 32px;
+        color: rgb(43,43,43);
+    }
+       
+    /*----------------FEATURES--------------------- */
+
+    #productfeature{
+        color: rgb(43,43,43);
+    }
+    #features-table{
+        padding-top: 1%;
+        padding-bottom: 1%;
+        padding-left: 15%;
+        border-collapse: separate;
+    }
+    .featurehead{
+        text-align: center;
+        font-size: 26px;
+        padding-right: 5%;
+        border-right: 2px rgba(0, 153, 255, 0.274) solid;
+    }
+    .featureinfo{
+        font-size:18px;
+        padding-left:5%;
+    }
+    .featurePic{
+        border-radius: 50%;
+        border: 2px solid;
+        max-height: 40%;
+        width: auto;
+        display: block;
+        margin: auto;
+        border-color: rgba(119, 136, 153, 0.295);
+    }        
+    .featurePicContainer{
+        padding-right: 10%;
+        padding-left: 5%;
+    }   
+    
+
+    /*----------------EXTRA FEATURES--------------------- */
+
+    #extraFeatTable{
+        border-collapse: collapse;
+    }
+    #extraFeatures{
+        background-color: rgb(128, 219, 255,0.275);
+        color: rgb(43,43,43);
+        padding-left: 20%;
+        padding-top: 1%;
+        padding-bottom: 1%;
+        padding-right: 20%
+    }
+    #extraFeatHead{
+        text-align: center;
+        font-size: 27px;
+    }
+    .extraFeatRow{
+        border-top: 2px solid;
+    }
+    .extraFeatureInfo{
+        padding-left: 10%;
+        padding-top: 3%;
+        padding-bottom: 3%;
+        font-size: 18px;
+    }
+    #extraFeatTableTitle{
+        font-size: 23px;
+    }
+
+    /*----------------FAQ--------------------- */
+    #faq{
+        color: rgb(43,43,43);
+    }
+    #faqheading{
+        text-align: center;
+        font-size: 30px;
+    }
+    #questionslist{
+        padding-left:10%;
+    }
+    a:link {
+        text-decoration: none;
+    }
+    a:visited {
+        color: black;
+    }
+    a:hover {
+        text-decoration: underline;
+    }
+    a:active {
+        color: #80dbff;
+        text-decoration: none;
+    }
+    .question{
+        font-size: 20px;
+        padding-top: 1%;
+    }
+</style>
+
 
 
 <body onload="responsiveNav();">
@@ -73,28 +145,30 @@
           <input class="button" type="button" name="Submit" id="sign-in-btn" value="Submit">
           <a onclick="register_show()"><h4 id="form-link">Register</h4></a>
         </div>
-      </div>
-    </div>
 
-    <div id="overlay" onclick="sign_in_exit();"></div>></div>
+  
+        <div id="overlay" onclick="sign_in_exit();"></div>></div>
+  
+        <nav>
+          <div id="logo"><img src="sprite.png" style="height: 65px; width: 65px;" alt="Logo"></div>
+          <ul id="nav-links">
+              <li><a href="home.html">Home</a></li>
+              <li><a href="about.html">About</a></li>
+              <li><a href="product.html">Products</a></li>
+              <li><a href="plans.html">Plans</a></li>
+              <li><a href="features.html">Features</a></li>
+              <li><a href="contact.html">Contact</a></li>
+              <li><a onclick="sign_in_show();"><i class="fas fa-user" id="user"></i></a></li>
+          </ul>
+          <div id="hamburger-menu-wrapper" onclick="toggle()">
+              <a onclick="sign_in_show();"><i class="fas fa-user" id="user2"></i></a>
+              <div class="toggle" id="toggle">
+                <span class="line1" id="line1"></span>
+                <span class="line2" id="line2"></span>
+                <span class="line3" id="line3"></span>
+                <div class="hamburg-bg"></div>
+              </div>
 
-    <nav>
-      <div id="logo"><img src="sprite.png" style="height: 65px; width: 65px;" alt="Logo"></div>
-      <ul id="nav-links">
-          <li><a href="home.html">Home</a></li>
-          <li><a href="about.html">About</a></li>
-          <li><a href="plans.html">Plans</a></li>
-          <li><a href="features.html">Features</a></li>
-          <li><a href="contact.html">Contact</a></li>
-          <li><a onclick="sign_in_show();"><i class="fas fa-user" id="user"></i></a></li>
-      </ul>
-      <div id="hamburger-menu-wrapper" onclick="toggle()">
-          <a onclick="sign_in_show();"><i class="fas fa-user" id="user2"></i></a>
-          <div class="toggle" id="toggle">
-            <span class="line1" id="line1"></span>
-            <span class="line2" id="line2"></span>
-            <span class="line3" id="line3"></span>
-            <div class="hamburg-bg"></div>
           </div>
       </div>
   </nav>
@@ -109,61 +183,68 @@
     </ul>
   </div>
 
-    <!--your code-->
-    <h2 id="producttitle">Features</h2>
-    <div class="product-feature">
-        <table id="features">
-            <tr>
-                <th>
-                    <h3 class='featurehead'>Instant Translation</h3>
+    <div id = "producthead">
+    <h2 id="producttitle">FEATURES</h2>
+    </div>
+    <div id="productFeature">
+        <table id="features-table">
+            <tr id="features-table-row">
+                <th class='featurehead'>
+                    <h3 >Coding Translation</h3>
                 </th>
                 <td class = "featureinfo">
                     <p>Translate code that you've written into another programming language with the same structure.
-                         Java to Python? Easy. C++ to Perl? No problem. It's that simple.
+                         Java to Python? C++ to Perl? No problem. It's simple to use.
                     </p>
                 </td>
-                <td><img width = "250px" src = "https://blog.hyperiondev.com/wp-content/uploads/2018/06/Blog-Article-How-many-programming-languages-should-I-learn.jpg"></td>
-                
+                <td class = "featurePicContainer"><img class = "featurePic" src = "programing-coding-languages.png" style="max-height: 30%;"></td>
             </tr>
-            <tr>
-                <th>
-                    <h3 class='featurehead'>Open Source</h3>
+            <tr id="features-table-row">
+                <th class='featurehead'>
+                    <h3>Open-Source</h3>
                 </th>
                 <td class = "featureinfo">
-                    <p>Open source and integrates easily with </p>
+                    <p>Completely open-source with the full version, allowing you to customize the tool however you want and integrate your own libraries.</p>
                 </td>
-                <td><img src = ""></td>
+                <td class = "featurePicContainer"><img src = "opensource.png" class = "featurePic"></td>
             </tr>
-            <tr>
-                <th>
-                    <h3 class='featurehead'>Powerful Learning Tool</h3>
+            <tr id="features-table-row">
+                <th class='featurehead'>
+                    <h3>A New Way to Learn</h3>
                 </th>
                 <td class = "featureinfo">
-                    <p>You understand your code but what about using it to learn another language. Learn new languages with your own code!</p>
+                    <p>Can you understand your own code in another language? This tool can teach you! Figure out the differences between each language and gain a 
+                        deeper understanding on what makes each language unique and useful.
+                    </p>
                 </td>
-                <td><img src = ""></td>
+                <td class = "featurePicContainer"><img src = "education.png" class ="featurePic"></td>
             </tr>
         </table>
     </div>
-    <div id="extrafeatures" style = "padding-block-start: 1%; padding-block-end: 2%;">
-        <h2>Additional Features</h2>
-        <table id = "extraFeat">
-            <tr>
-                <th>IDE Supported</th>
-                <td>Supports popular IDEs and text editors</td>
+    <div id="extraFeatures">
+        <h2 id = "extraFeatHead">Additional Features</h2>
+        <table id = "extraFeatTable">
+            <tr class = "extraFeatRow" style = "border: none">
+                <th id = "extraFeatTableTitle">IDE Integrated</th>
+                <td class = "extraFeatureInfo">Built into popular IDEs and text editors, allowing you to use it in your favourite workspace.</td>
             </tr>
-            <tr>
-                <th>Feature</th>
-                <td>description</td>
+            <tr class = "extraFeatRow">
+                <th id = "extraFeatTableTitle">24/7 Support</th>
+                <td class = "extraFeatureInfo">Have any troubles? We have a support team that can answer your emails and calls.</td>
+            </tr>
+            <tr class = "extraFeatRow">
+                <th id = "extraFeatTableTitle">Library Support</th>
+                <td class = "extraFeatureInfo">Supports <b>built-in</b> and <b>custom</b> libraries for each language.</td>
             </tr>
         </table>
     </div>
     <div id="faq">
-        <h2 id = "faqheading">FAQ</h2>
-        <ul>
-            <li><a href="#">Where can I install?</a></li>
-            <li><a href="#">What applications are compatible?</a></li>
-            <li><a href="#">Can I use it with any language?</a></li>
+        <h2 id = "faqheading">FAQ</h3>
+        <ul id = "questionslist">
+            <li class = "question"><a href="contact.html">How can I install Codevert?</a></li>
+            <li class = "question"><a href="contact.html">What applications are compatible?</a></li>
+            <li class = "question"><a href="contact.html">Can I use it with any language?</a></li>
+            <li class = "question"><a href="contact.html"><em>Question not listed? Click here!</em></a></li>
         </ul>
     </div>
 <script type="text/javascript" src="plans_temporary_js.js"></script>
