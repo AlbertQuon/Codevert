@@ -6,7 +6,7 @@ body {
     background-color: #F4F5FF;
     overflow-x: hidden;
     font-family: 'Montserrat', sans-serif;
-    
+
 }
 
 nav {
@@ -38,7 +38,7 @@ nav {
 
 #nav-links li {
     display: inline-block;
-    
+
 }
 
 #user {
@@ -50,7 +50,7 @@ nav {
     color: #F4F5FF;
 }
 
-#nav-links li a{
+#nav-links li a {
     text-decoration: none;
     color: #F4F5FF;
     padding: 15px;
@@ -94,7 +94,7 @@ p {
     font-weight: 600;
 }
 
-.link:hover {   
+.link:hover {
     text-decoration: underline;
 }
 
@@ -102,30 +102,179 @@ p {
 
 .landingHeader {
     color: #fff !important;
-    padding: 12% 0 15% 7%;
+    padding: 15% 0 15% 10%;
     background-color: #5680E9;
     /* background-image: linear-gradient(to bottom, rgba(), rgba(), url(public/images/openaihackathon-1.jpg)); */
     max-height: 100%;
     background-size: cover;
+    z-index: -1;
 }
 
 .title {
     color: #fff;
     margin-bottom: 1%;
+    width: 100%;
+    display: block;
+    /* float: left; */
 }
 
 .subTitle {
     color: #fff;
     font-size: 18px;
-    width: inherit;
+    width: 260px;
     margin: 0;
     float: left;
 }
 
 .landingButton {
-    margin-left: 1%;
+    width: 195px;
+    float: right;
+    margin-right: 10%;
+    margin-top: -10px;
+    /* max-width: 60%;
+    display: block; */
+
 }
 
 .belowTitle {
-    margin-top: 2%;
+    margin-top: 4%;
+    width: inherit;
+    /* display: block; */
+    /* float: left; */
+}
+
+#cImage {
+    margin: -10rem 0% 0% 2%;
+    /* float: right; */
+    width: 275px;
+    height: 200px;
+    border-radius: 30%;
+    border: #fff solid 5px;
+    box-shadow: 5px 7px 5px rgba(0, 0, 0, .15);
+}
+
+.icon {
+    position: relative;
+    top: 2rem;
+    left: 4rem;
+    transform: translate(-70%, -50%);
+    width: 80px;
+    height: 60px;
+    cursor: pointer;
+}
+
+.arrow {
+    position: absolute;
+    top: 25px;
+    width: 90%;
+    height: 10px;
+    background-color: #fff;
+    box-shadow: 0 3px 5px rgba(0, 0, 0, .2);
+    animation: arrow 700ms linear infinite;
+    transform: rotate(30deg);
+}
+
+.arrow::after {
+    content: '';
+    position: absolute;
+    width: 60%;
+    height: 10px;
+    top: -12px;
+    right: -8px;
+    background-color: #fff;
+    transform: rotate(45deg);
+}
+
+.arrow::before {
+    content: '';
+    position: absolute;
+    width: 60%;
+    height: 10px;
+    top: 12px;
+    right: -8px;
+    background-color: #fff;
+    box-shadow: 0 3px 5px rgba(0, 0, 0, .2);
+    transform: rotate(-45deg);
+}
+
+.icon2 {
+    position: relative;
+    top: 13rem;
+    left: -19rem;
+    transform: translate(-70%, -50%);
+    width: 80px;
+    height: 60px;
+    cursor: pointer;
+}
+
+.arrow2 {
+    position: absolute;
+    top: 25px;
+    width: 90%;
+    height: 10px;
+    background-color: #fff;
+    box-shadow: 0 3px 5px rgba(0, 0, 0, .2);
+    animation: arrow 700ms linear infinite;
+    transform: rotate(150deg);
+}
+
+.arrow2::after {
+    content: '';
+    position: absolute;
+    width: 60%;
+    height: 10px;
+    top: -12px;
+    right: -8px;
+    background-color: #fff;
+    transform: rotate(45deg);
+}
+
+.arrow2::before {
+    content: '';
+    position: absolute;
+    width: 60%;
+    height: 10px;
+    top: 12px;
+    right: -8px;
+    background-color: #fff;
+    box-shadow: 0 3px 5px rgba(0, 0, 0, .2);
+    transform: rotate(-45deg);
+}
+
+#javaImage {
+    position: absolute;
+    margin: 10rem 0rem 0% 1%;
+    float: left;
+    width: 275px;
+    height: 200px;
+    border-radius: 30%;
+    border: #fff solid 5px;
+    box-shadow: 5px 7px 5px rgba(0, 0, 0, .15);
+}
+
+#pythonImage {
+    margin: 1rem 0% 0% 2%;
+    /* float: right; */
+    width: 275px;
+    height: 200px;
+    border-radius: 30%;
+    border: #fff solid 5px;
+    box-shadow: 5px 7px 5px rgba(0, 0, 0, .15);
+}
+.landingIcons {
+    font-size: 80px;
+    text-align: center;
+    margin: 3rem auto 5rem 10rem !important;
+}
+.landingIcon {
+    font-size: 80px;
+}
+
+.landingIconText{
+    font-size: 25px;
+    text-align: center;
+}
+
+.individualIcon {
+    max-width: 30% !important;
 }
