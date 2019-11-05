@@ -148,6 +148,18 @@ nav {
     opacity: 0.8;
 }
 
+.buttons {
+    background-color: #8860D0;
+    padding: 15px 20px 15px 20px;
+    color: #F4F5FF;
+    text-decoration: none;
+    transition: all .25s ease;
+}
+
+.buttons:hover {
+    opacity: 0.8;
+}
+
 .plans-trial {
     height: var(--height);
     flex-grow: 2;
@@ -488,4 +500,30 @@ form h4 {
 
 .section div {
     margin-top: 80px;
+}
+
+/* CONTACT PAGE */
+
+.contactHeader {
+    font-family: 'Montserrat', sans-serif;
+    margin-top: 6rem;
+    font-weight: 400;
+    text-align: center;
+}
+
+.supportTicket {
+    background-color: #5680E9;
+    margin: 3rem 5rem 0rem 10rem;
+    padding: 3rem;
+    max-width: 30%;
+    border-radius: 20px;
+}
+
+.contactIcons {
+    font-size: 150px;
+    flex-direction: column;
+}
+
+.git {
+    margin-left: 12.5rem;
 }
