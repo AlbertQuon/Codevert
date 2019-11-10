@@ -16,18 +16,22 @@
     /*----------------HEADING--------------------- */   
     
     #producthead{
-        padding-top: 6%;
-        padding-bottom: 2%;
-        background-color: #84ceeb;
+        padding-top: 4%;
+        padding-bottom: 0.5%;
         text-align: center;
-        font-size: 32px;
-        color: rgb(43,43,43);
+        font-size: 2.85em;
+        color: #F4F5FF;
+        background-color: rgba(51, 163, 255, 0.911);
+    }
+    #producttitle{
+        font-weight: normal;
     }
        
     /*----------------FEATURES--------------------- */
 
     #productfeature{
         color: rgb(43,43,43);
+        
     }
     #features-table{
         padding-top: 1%;
@@ -37,18 +41,20 @@
     }
     .featurehead{
         text-align: center;
-        font-size: 26px;
+        font-size: 1.7em;
         padding-right: 5%;
         border-right: 2px rgba(0, 153, 255, 0.274) solid;
     }
     .featureinfo{
-        font-size:18px;
+        font-size: 1.30em;
         padding-left:5%;
+        padding-right:10%;
     }
     .featurePic{
         border-radius: 50%;
         border: 2px solid;
-        max-height: 40%;
+        max-height: 100%;
+        max-width: 150%;
         width: auto;
         display: block;
         margin: auto;
@@ -56,7 +62,7 @@
     }        
     .featurePicContainer{
         padding-right: 10%;
-        padding-left: 5%;
+        padding-left: 0%;
     }   
     
 
@@ -66,7 +72,6 @@
         border-collapse: collapse;
     }
     #extraFeatures{
-        background-color: rgb(128, 219, 255,0.275);
         color: rgb(43,43,43);
         padding-left: 20%;
         padding-top: 1%;
@@ -75,7 +80,9 @@
     }
     #extraFeatHead{
         text-align: center;
-        font-size: 27px;
+        font-size: 2.70em;
+        font-family: 'Montserrat', serif;
+        font-weight: normal;
     }
     .extraFeatRow{
         border-top: 2px solid;
@@ -155,7 +162,6 @@
           <ul id="nav-links">
               <li><a href="home.html">Home</a></li>
               <li><a href="about.html">About</a></li>
-              <li><a href="product.html">Products</a></li>
               <li><a href="plans.html">Plans</a></li>
               <li><a href="features.html">Features</a></li>
               <li><a href="faqpage.html">FAQ</a></li>
@@ -193,34 +199,35 @@
         <table id="features-table">
             <tr id="features-table-row">
                 <th class='featurehead'>
-                    <h3 >Coding Translation</h3>
+                    <h3 style = "font-weight: normal;">Real-Time Coding Translation</h3>
                 </th>
                 <td class = "featureinfo">
                     <p>Translate code that you've written into another programming language with the same structure.
-                         Java to Python? C++ to Perl? No problem. It's simple to use.
+                         Java to Python? C++ to Perl? No problem. It's simple to use. Translate lines, save as separate files, or translate as you code!
                     </p>
                 </td>
-                <td class = "featurePicContainer"><img class = "featurePic" src = "programing-coding-languages.png" style="max-height: 30%;"></td>
+                <td class = "featurePicContainer"><img class = "featurePic" src = "public/images/programing-coding-languages.png"></td>
             </tr>
             <tr id="features-table-row">
                 <th class='featurehead'>
-                    <h3>Open-Source</h3>
+                    <h3 style = "font-weight: normal;">Open-Source</h3>
                 </th>
                 <td class = "featureinfo">
-                    <p>Completely open-source with the full version, allowing you to customize the tool however you want and integrate your own libraries.</p>
+                    <p>For the seasoned developers, Codevert being open-source allows you to customize the tool however you want and integrate your own libraries and plug-ins. 
+                    </p>
                 </td>
-                <td class = "featurePicContainer"><img src = "opensource.png" class = "featurePic"></td>
+                <td class = "featurePicContainer"><img src = "public/images/opensource.png" class = "featurePic"></td>
             </tr>
             <tr id="features-table-row">
                 <th class='featurehead'>
-                    <h3>A New Way to Learn</h3>
+                    <h3 style = "font-weight: normal;">A New Way to Learn</h3>
                 </th>
                 <td class = "featureinfo">
-                    <p>Can you understand your own code in another language? This tool can teach you! Figure out the differences between each language and gain a 
+                    <p>Can you understand your own code in another language? Our courses integrated into the tool can teach you! Figure out the differences between each language and gain a 
                         deeper understanding on what makes each language unique and useful.
                     </p>
                 </td>
-                <td class = "featurePicContainer"><img src = "education.png" class ="featurePic"></td>
+                <td class = "featurePicContainer"><img src = "public/images/education.png" class ="featurePic"></td>
             </tr>
         </table>
     </div>
@@ -237,17 +244,17 @@
             </tr>
             <tr class = "extraFeatRow">
                 <th id = "extraFeatTableTitle">Library Support</th>
-                <td class = "extraFeatureInfo">Supports <b>built-in</b> and <b>custom</b> libraries for each language.</td>
+                <td class = "extraFeatureInfo">Supports <b>built-in</b> and popular <b>custom</b> libraries for each language.</td>
             </tr>
         </table>
     </div>
     <div id="faq">
         <h2 id = "faqheading">FAQ</h3>
         <ul id = "questionslist">
-            <li class = "question"><a href="contact.html">How can I install Codevert?</a></li>
-            <li class = "question"><a href="contact.html">What applications are compatible?</a></li>
-            <li class = "question"><a href="contact.html">Can I use it with any language?</a></li>
-            <li class = "question"><a href="contact.html"><em>Question not listed? Click here!</em></a></li>
+            <li class = "question"><a href="faqpage.html#browsers">Which browsers does Codevert support?</a></li>
+            <li class = "question"><a href="faqpage.html#languagesLink">What languages is the app offered in?</a></li>
+            <li class = "question"><a href="faqpage.html#main">What's the difference between the demo and the premium version?</a></li>
+            <li class = "question"><a href="contact.html"><em>Question not listed? Contact us!</em></a></li>
         </ul>
     </div>
 <script type="text/javascript" src="plans_temporary_js.js"></script>
