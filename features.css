@@ -60,7 +60,7 @@
     width: auto;
     display: block;
     margin: auto;
-    border-color: rgba(119, 136, 153, 0.295);
+    border-color: rgba(0, 128, 255, 0.651);
     
 }
 
@@ -68,6 +68,10 @@
     padding-right: 5%;
     padding-left: 5%;
 
+}
+
+#codePic{
+    max-height:60%
 }
 
 
