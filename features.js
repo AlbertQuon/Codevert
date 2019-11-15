@@ -13,9 +13,11 @@ function typeWriter(){
 // IMAGE HIGHLIGHTING
 function highlight(){
     this.style.borderColor = "rgba(0, 128, 255, 0.651)";
+    this.style.width = "50%"
 }
 function reverseHighlight(){
     this.style.borderColor = "rgba(119, 136, 153, 0.295)";
+    this.style.width = "60%"
 }
 
 // FOR FADING IN AND OUT
