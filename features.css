@@ -2,7 +2,7 @@
 /*----------------HEADING--------------------- */
 
 #producthead {
-    margin-top: 6%;
+    margin-top: 4%;
     padding-top: 0.5%;
     padding-bottom: 0.5%;
     margin-bottom: 1.5%;
@@ -34,7 +34,7 @@
     border-collapse: separate;
 }
 
-.featurehead {
+.featureHead {
     text-align: center;
     font-size: 1.7em;
     border-bottom: 2px rgba(0, 153, 255, 0.274) solid;
@@ -44,10 +44,11 @@
     height: 1em;
 }
 
-.featureinfo {
+.featureInfo {
     font-size: 1.30em;
     padding-right: 5%;
     padding-left: 5%;
+    line-height: 150%;
     vertical-align: top;
     text-align: center;
 }
@@ -74,6 +75,16 @@
     max-height:60%
 }
 
+.featureInfoList{
+    border-top: rgba(0, 110, 255, 0.582) solid 0.5px;
+    padding-top: 8%;
+}
+.featureListInfo{
+    padding-top: 2%;
+    text-align: left;
+    font-size: 1em;
+}
+
 
 /*----------------EXTRA FEATURES--------------------- */
 
@@ -83,7 +94,7 @@
 
 #extraFeatures {
     color: rgb(27, 27, 27);
-    background-color: rgba(51, 163, 255, 0.39);
+    background-color: rgba(77, 175, 255, 0.39);
     padding-left: 20%;
     padding-top: 1%;
     padding-bottom: 2%;
@@ -105,7 +116,7 @@
     padding-left: 10%;
     padding-top: 3%;
     padding-bottom: 3%;
-    font-size: 18px;
+    font-size: 1.2em;
 }
 
 #extraFeatRowTitle {
@@ -115,16 +126,16 @@
 /*----------------FAQ--------------------- */
 #faq {
     color: rgb(43, 43, 43);
-    padding-top: 1%;
-    padding-bottom: 1%;
+    padding-top: 1.5%;
+    padding-bottom: 1.5%;
 }
 
-#faqheading {
+#faqHeading {
     text-align: center;
     font-size: 2.32em;
 }
 
-#questionslist {
+#questionsList {
     padding-left: 10%;
 }
 
