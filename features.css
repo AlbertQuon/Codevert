@@ -51,6 +51,7 @@
     line-height: 150%;
     vertical-align: top;
     text-align: center;
+    border-bottom: rgba(0, 110, 255, 0.582) solid 0.5px;
 }
 
 .featurePic {
@@ -68,7 +69,6 @@
 .featurePicContainer {
     padding-right: 5%;
     padding-left: 5%;
-
 }
 
 #codePic{
@@ -76,13 +76,14 @@
 }
 
 .featureInfoList{
-    border-top: rgba(0, 110, 255, 0.582) solid 0.5px;
     padding-top: 8%;
 }
 .featureListInfo{
-    padding-top: 2%;
     text-align: left;
-    font-size: 1em;
+    font-size: 1em;   
+}
+.featuresTableRow{
+    vertical-align: top;
 }
 
 
