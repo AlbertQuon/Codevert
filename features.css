@@ -72,15 +72,17 @@
 }
 
 #codePic{
-    max-height:60%
+    max-height: 60%
 }
 
 .featureInfoList{
-    padding-top: 8%;
+    padding-top: 2%;
 }
 .featureListInfo{
     text-align: left;
-    font-size: 1em;   
+    font-size: 1em;
+    padding-top: 4%;   
+    line-height: 140%;
 }
 .featuresTableRow{
     vertical-align: top;
