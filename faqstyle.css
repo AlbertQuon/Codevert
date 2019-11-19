@@ -134,14 +134,14 @@ body {
     width: 1000px;
 }
 
-#qu {
+.qu {
     list-style: none;
     padding-left: 70px;
     font-size: 1.5rem;
     color: #5680E9;
 }
 
-#ans {
+.ans {
     list-style: none;
     padding-left: 130px;
     line-height: 1.5;
