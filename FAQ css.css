@@ -65,21 +65,13 @@ body {
     font-family: 'Montserrat', sans-serif;
 }
 
-.search {
-    width: 500px;
-    height: 50px;
-    position: absolute;
-    padding-top: 50px;
- 
-    background:#f5f8ff;
-}
 
-.searchTerm {
-    width: 500px;
+
+.searchTerm input[type=text] {
     border: 2px solid #8860D0;
     border-right: none;
+    padding-bottom: 0px;
     padding: 5px;
-    height: 40px;
     outline: none;
     color: #b08eed;
     font-family: 'Montserrat', sans-serif;
@@ -92,8 +84,8 @@ body {
     }
 
 .searchButton {
-    width: 60px;
-    height: 54px;
+    width: 80px;
+    height: 74px;
     border: 1px solid #8860D0;
     background: #8860D0;
     text-align: left;
@@ -103,6 +95,7 @@ body {
 }
 
 .wrap {
+    display: flex;
     width: 30%;
     position: absolute;
     top: 110px;
@@ -113,12 +106,6 @@ body {
     background-color: #e6edff;
 }
 
-
-.mglass {
-    width:25px;
-    height:25px;
-    padding-left:6px;
-}
 
 .pagetitle {
     font-weight: 500;
